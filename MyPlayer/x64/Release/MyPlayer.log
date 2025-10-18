@@ -1,0 +1,99 @@
+﻿   Qt/MSBuild: 3.4.1.0
+  Reading Qt configuration (D:/QT/5.14.2/msvc2017_64/bin/qmake)
+   Qt: 5.14.2
+  uic MyMainWindow.ui
+  moc include\MyMainWindow.h
+  main.cpp
+  MyMainWindow.cpp
+  Base64.cpp
+  DigestAuthentication.cpp
+  ourMD5.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\Base64.cpp(42,33): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  SpsParse.cpp
+  STRTPSession.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(35,28): warning C4018: “<”: 有符号/无符号不匹配
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(62,28): warning C4018: “<”: 有符号/无符号不匹配
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(133,31): warning C4018: “<”: 有符号/无符号不匹配
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(127,35): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(126,35): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(134,49): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(134,31): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+  MediaPipeline.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(141,40): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(142,9): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/internal/STRTPSession.cpp”)
+  
+  MediaPlayerFacade.cpp
+  MyPlayer.cpp
+  OpenGLConsumer.cpp
+  RtspClient.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MyPlayer.cpp”)
+  
+  PrivateRtsp.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MediaPipeline.cpp”)
+  
+  SoftDecoder.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MediaPlayerFacade.cpp”)
+  
+  OnvifDeviceModel.cpp
+  OnvifDeviceSearcher.cpp
+E:\rtsp\MyPlayer\3rdparty\ffmpeg-4.3.1\build\windows\x64\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MediaPlayerFacade.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(149,58): warning C4267: “=”: 从“size_t”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(160,32): warning C4244: “=”: 从“unsigned __int64”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(168,39): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(208,30): warning C4267: “+=”: 从“size_t”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(209,16): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(221,50): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(254,51): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(269,57): warning C4267: “+=”: 从“size_t”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(270,43): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\3rdparty\ffmpeg-4.3.1\build\windows\x64\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/SoftDecoder.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\products\SoftDecoder.cpp(50,67): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/PrivateRtsp.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/RtspClient.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp(164,53): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp(230,36): warning C4244: “参数”: 从“SOCKET”转换到“const int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp(400,32): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(170,49): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(931,32): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(1033,47): warning C4244: “=”: 从“unsigned long”转换到“unsigned short”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(1486,86): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(1500,86): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MediaPlayerFacade.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/OpenGLConsumer.cpp”)
+  
+  moc_MyMainWindow.cpp
+STRTPSession.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl jrtplib::RTPSession::DeletePacket(class jrtplib::RTPPacket *)" (?DeletePacket@RTPSession@jrtplib@@QEAAXPEAVRTPPacket@2@@Z)
+STRTPSession.obj : error LNK2001: 无法解析的外部符号 "public: class jrtplib::RTPTransmissionInfo * __cdecl jrtplib::RTPSession::GetTransmissionInfo(void)" (?GetTransmissionInfo@RTPSession@jrtplib@@QEAAPEAVRTPTransmissionInfo@2@XZ)
+STRTPSession.obj : error LNK2001: 无法解析的外部符号 "public: virtual __cdecl jrtplib::RTPSession::~RTPSession(void)" (??1RTPSession@jrtplib@@UEAA@XZ)
+STRTPSession.obj : error LNK2001: 无法解析的外部符号 "public: __cdecl jrtplib::RTPSession::RTPSession(class jrtplib::RTPRandom *,class jrtplib::RTPMemoryManager *)" (??0RTPSession@jrtplib@@QEAA@PEAVRTPRandom@1@PEAVRTPMemoryManager@1@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: virtual bool __cdecl jrtplib::RTPIPv4Address::IsFromSameHost(class jrtplib::RTPAddress const *)const " (?IsFromSameHost@RTPIPv4Address@jrtplib@@UEBA_NPEBVRTPAddress@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: virtual bool __cdecl jrtplib::RTPIPv4Address::IsSameAddress(class jrtplib::RTPAddress const *)const " (?IsSameAddress@RTPIPv4Address@jrtplib@@UEBA_NPEBVRTPAddress@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: virtual class jrtplib::RTPAddress * __cdecl jrtplib::RTPIPv4Address::CreateCopy(class jrtplib::RTPMemoryManager *)const " (?CreateCopy@RTPIPv4Address@jrtplib@@UEBAPEAVRTPAddress@2@PEAVRTPMemoryManager@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: int __cdecl jrtplib::RTPSessionParams::SetNeedThreadSafety(bool)" (?SetNeedThreadSafety@RTPSessionParams@jrtplib@@QEAAH_N@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: int __cdecl jrtplib::RTPSessionParams::SetUsePollThread(bool)" (?SetUsePollThread@RTPSessionParams@jrtplib@@QEAAH_N@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: __cdecl jrtplib::RTPSessionParams::RTPSessionParams(void)" (??0RTPSessionParams@jrtplib@@QEAA@XZ)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: virtual bool __cdecl jrtplib::RTPTCPAddress::IsFromSameHost(class jrtplib::RTPAddress const *)const " (?IsFromSameHost@RTPTCPAddress@jrtplib@@UEBA_NPEBVRTPAddress@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: virtual bool __cdecl jrtplib::RTPTCPAddress::IsSameAddress(class jrtplib::RTPAddress const *)const " (?IsSameAddress@RTPTCPAddress@jrtplib@@UEBA_NPEBVRTPAddress@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: virtual class jrtplib::RTPAddress * __cdecl jrtplib::RTPTCPAddress::CreateCopy(class jrtplib::RTPMemoryManager *)const " (?CreateCopy@RTPTCPAddress@jrtplib@@UEBAPEAVRTPAddress@2@PEAVRTPMemoryManager@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl jrtplib::RTPSession::ClearDestinations(void)" (?ClearDestinations@RTPSession@jrtplib@@QEAAXXZ)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: int __cdecl jrtplib::RTPSession::AddDestination(class jrtplib::RTPAddress const &)" (?AddDestination@RTPSession@jrtplib@@QEAAHAEBVRTPAddress@2@@Z)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: bool __cdecl jrtplib::RTPSession::IsActive(void)" (?IsActive@RTPSession@jrtplib@@QEAA_NXZ)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl jrtplib::RTPSession::Destroy(void)" (?Destroy@RTPSession@jrtplib@@QEAAXXZ)
+RtspClient.obj : error LNK2001: 无法解析的外部符号 "public: int __cdecl jrtplib::RTPSession::Create(class jrtplib::RTPSessionParams const &,class jrtplib::RTPTransmissionParams const *,enum jrtplib::RTPTransmitter::TransmissionProtocol)" (?Create@RTPSession@jrtplib@@QEAAHAEBVRTPSessionParams@2@PEBVRTPTransmissionParams@2@W4TransmissionProtocol@RTPTransmitter@2@@Z)
+E:\rtsp\MyPlayer\x64\Release\MyPlayer.exe : fatal error LNK1120: 18 个无法解析的外部命令

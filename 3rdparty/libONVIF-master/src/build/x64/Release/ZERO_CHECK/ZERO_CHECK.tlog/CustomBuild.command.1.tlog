@@ -1,0 +1,10 @@
+^D:\MYPLAYER\3RDPARTY\LIBONVIF-MASTER\SRC\BUILD\CMAKEFILES\B94D94EFD83AC426933ABBCC72DA9095\GENERATE.STAMP.RULE
+setlocal
+D:\software\bin\cmake.exe -SD:/MyPlayer/3rdparty/libONVIF-master/src -BD:/MyPlayer/3rdparty/libONVIF-master/src/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/MyPlayer/3rdparty/libONVIF-master/src/build/libONVIF.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

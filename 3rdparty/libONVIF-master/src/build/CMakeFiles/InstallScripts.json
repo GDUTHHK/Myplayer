@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/MyPlayer/3rdparty/libONVIF-master/src/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

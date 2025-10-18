@@ -1,0 +1,17 @@
+E:\rtsp\MyPlayer\MyPlayer\example\main.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\main.obj
+E:\rtsp\MyPlayer\MyPlayer\include\MyMainWindow.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\MyMainWindow.obj
+E:\rtsp\MyPlayer\MyPlayer\src\factories\JsonConfigFactory.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\JsonConfigFactory.obj
+E:\rtsp\MyPlayer\MyPlayer\src\internal\Base64.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\Base64.obj
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\DigestAuthentication.obj
+E:\rtsp\MyPlayer\MyPlayer\src\internal\ourMD5.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\ourMD5.obj
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\SpsParse.obj
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\STRTPSession.obj
+E:\rtsp\MyPlayer\MyPlayer\src\MediaPipeline.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\MediaPipeline.obj
+E:\rtsp\MyPlayer\MyPlayer\src\MediaPlayerFacade.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\MediaPlayerFacade.obj
+E:\rtsp\MyPlayer\MyPlayer\src\products\OpenGLConsumer.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\OpenGLConsumer.obj
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\RtspClient.obj
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\PrivateRtsp.obj
+E:\rtsp\MyPlayer\MyPlayer\src\products\SoftDecoder.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\SoftDecoder.obj
+E:\rtsp\MyPlayer\MyPlayer\src\tools\onvif\OnvifDeviceModel.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\OnvifDeviceModel.obj
+E:\rtsp\MyPlayer\MyPlayer\src\tools\onvif\OnvifDeviceSearcher.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\OnvifDeviceSearcher.obj
+E:\rtsp\MyPlayer\MyPlayer\x64\Debug\qt\moc\moc_MyMainWindow.cpp;E:\rtsp\MyPlayer\MyPlayer\x64\Debug\moc_MyMainWindow.obj

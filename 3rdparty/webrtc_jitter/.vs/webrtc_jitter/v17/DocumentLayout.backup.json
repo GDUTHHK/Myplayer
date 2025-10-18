@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F1BA11-32BB-408D-A518-D9F6E742D55D}|webrtc_jitter\\webrtc_jitter.vcxproj|E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\common_audio\\third_party\\ooura\\fft_size_128\\ooura_fft.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B7F1BA11-32BB-408D-A518-D9F6E742D55D}|webrtc_jitter\\webrtc_jitter.vcxproj|solutionrelative:common_audio\\third_party\\ooura\\fft_size_128\\ooura_fft.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F1BA11-32BB-408D-A518-D9F6E742D55D}|webrtc_jitter\\webrtc_jitter.vcxproj|E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\api\\audio_codecs\\audio_codec_pair_id.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B7F1BA11-32BB-408D-A518-D9F6E742D55D}|webrtc_jitter\\webrtc_jitter.vcxproj|solutionrelative:api\\audio_codecs\\audio_codec_pair_id.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ooura_fft.cc",
+              "DocumentMoniker": "E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\common_audio\\third_party\\ooura\\fft_size_128\\ooura_fft.cc",
+              "RelativeDocumentMoniker": "common_audio\\third_party\\ooura\\fft_size_128\\ooura_fft.cc",
+              "ToolTip": "E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\common_audio\\third_party\\ooura\\fft_size_128\\ooura_fft.cc",
+              "RelativeToolTip": "common_audio\\third_party\\ooura\\fft_size_128\\ooura_fft.cc",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-20T05:57:42.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "audio_codec_pair_id.cc",
+              "DocumentMoniker": "E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\api\\audio_codecs\\audio_codec_pair_id.cc",
+              "RelativeDocumentMoniker": "api\\audio_codecs\\audio_codec_pair_id.cc",
+              "ToolTip": "E:\\rtsp\\MyPlayer\\3rdparty\\webrtc_jitter\\api\\audio_codecs\\audio_codec_pair_id.cc",
+              "RelativeToolTip": "api\\audio_codecs\\audio_codec_pair_id.cc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-20T05:57:14.216Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

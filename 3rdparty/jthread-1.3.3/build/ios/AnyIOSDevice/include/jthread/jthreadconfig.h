@@ -1,0 +1,22 @@
+//
+//  jthreadconfig.h
+//  JThread
+//
+//  Created by Developer on 2023/4/23.
+//
+
+#ifndef JTHREADCONFIG_H
+#define JTHREADCONFIG_H
+
+#define JTHREAD_IMPORT
+#define JTHREAD_EXPORT
+#ifndef JTHREAD_COMPILING
+    #define JTHREAD_IMPORTEXPORT JTHREAD_EXPORT
+#else
+    #define JTHREAD_IMPORTEXPORT JTHREAD_IMPORT
+#endif /* JTHREAD_COMPILING */
+
+
+#define JTHREAD_CONFIG_JMUTEXCRITICALSECTION
+
+#endif /* JTHREADCONFIG_H */

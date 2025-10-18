@@ -1,0 +1,56 @@
+修改原因：
+解析RTP-over-tcp时一直解析错误
+问题原因：
+当使用RTP-over-tcp模式时，在RTP包数据前会有4字节数据。
+| 0 | 1 | 2 3|
+|magic($)|channel(信源，用于区分rtp和rtcp，还有同个会话上的多媒体不同信源)| RTP包长度
+
+源码中一开始recv 2字节，然后就把这个当作了RTP包长，是错误的。如果recv 4，然后将后两个字节当作包长
+
+修改源码地址：
+一、
+file：rtptcptransmitter.cpp
+func：RTPTCPTransmitter::SocketData::ProcessAvailableBytes
+①
+line：  866  
+原：const int numLengthBuffer = 2;
+改：const int numLengthBuffer = 4;
+②
+line：889
+原：for (int i = numLengthBuffer-1, shift = 0 ; i >= 0 ; i--, shift += 8)
+改：for (int i = numLengthBuffer-1, shift = 0 ; i >= 2 ; i--, shift += 8)
+二、
+file：rtptcptransmitter.h
+class：jrtplib::RTPTCPTransmitter::SocketData
+①
+line：172
+原：uint8_t m_lengthBuffer[2];
+改：uint8_t m_lengthBuffer[4];
+
+
+暂时可用，不确定稳定性。
+理论上，接收端存在问题，发送端亦存在问题
+
+23.11.6日
+问题原因：
+在JRTPLIB库上搭建RTSP时，TCP连接下，RTSP模块和JRTPLIB存在socket读取竞争，导致JRTPLIB接收到的RTP/RTCP可能不完整（但是JRTPLIB并不兼容这种情况）
+修改方案：在接收之前通过判断 '$' 字符，因为TCP模式下RTP/RTCP都是由 '$' 开始，同时项目实践时，JRTPLIB会在RTSP完成了才执行，所以不会读取到RTSP
+修改源码地址：
+一、
+file：rtptcptransmitter.cpp
+func：RTPTCPTransmitter::SocketData::ProcessAvailableBytes
+①
+line: 866
+在const int numLengthBuffer = 4;代码行下直接新增
+新增：if (m_lengthBufferOffset == 0)
+	{
+		assert(m_pDataBuffer == 0);
+		int r = 0;
+		r = (int)recv(sock, (char*)m_lengthBuffer, 1, 0);
+		if (r < 0)
+			return ERR_RTP_TCPTRANS_ERRORINRECV;
+		if (m_lengthBuffer[0] != '$')
+			return 0;
+		m_lengthBufferOffset += 1;
+		availLen -= 1;
+	}

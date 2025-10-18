@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\headerParserTool.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifcommon.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifanalytics.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifdevice.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifdiscovery.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifdisplay.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifevent.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifimaging.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifmedia.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifmedia2.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifprobe.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifptz.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifreceiver.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifrecording.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifreplay.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\onvifinfo.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\MyPlayer\3rdparty\libONVIF-master\src\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

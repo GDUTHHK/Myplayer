@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifcommon_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\generated\soapC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\duration.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\qdatetime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\AbsoluteOrRelativeTimeType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\qstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\stdsoap2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\dom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\wsaapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\qstringCompare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\SoapCtx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\SoapAuthHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\SoapHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\wsseapi-lite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifcommon_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifcommon_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifcommon_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\stlvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\generated\soapStub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\generated\soapH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\stdsoap2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\wsaapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\AbsoluteOrRelativeTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\qstringCompare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\SoapCtx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\SoapAuthHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\Request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\Response.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\SoapHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap\wsseapi-lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MyPlayer\3rdparty\libONVIF-master\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9E697FED-DF61-3726-B015-7BBEFDE96F67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7C8E9A3B-9447-3081-ABDB-3C4053D6EC91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

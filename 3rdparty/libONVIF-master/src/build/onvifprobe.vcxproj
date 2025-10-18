@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DCA28C4B-9FA8-355F-9805-048D7C1230E9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>onvifprobe</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">onvifprobe.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">onvifprobe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">onvifprobe.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">onvifprobe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">onvifprobe.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">onvifprobe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">onvifprobe.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">onvifprobe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_Debug;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.14.2/msvc2017_64/include" /external:I "D:/QT/5.14.2/msvc2017_64/include/QtCore" /external:I "D:/QT/5.14.2/msvc2017_64/./mkspecs/win32-msvc" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;CMAKE_INTDIR="Debug";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_Debug;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_Debug;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target onvifprobe</Message>
+      <Command>setlocal
+cd D:\MyPlayer\3rdparty\libONVIF-master\src\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\software\bin\cmake.exe -E cmake_autogen D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/onvifprobe_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>Debug\onvifdevice.lib;Debug\onvifcommon.lib;D:\QT\5.14.2\msvc2017_64\lib\Qt5Cored.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MyPlayer/3rdparty/libONVIF-master/src/build/Debug/onvifprobe.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/MyPlayer/3rdparty/libONVIF-master/src/build/Debug/onvifprobe.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_Release;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.14.2/msvc2017_64/include" /external:I "D:/QT/5.14.2/msvc2017_64/include/QtCore" /external:I "D:/QT/5.14.2/msvc2017_64/./mkspecs/win32-msvc" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_Release;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_Release;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target onvifprobe</Message>
+      <Command>setlocal
+cd D:\MyPlayer\3rdparty\libONVIF-master\src\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\software\bin\cmake.exe -E cmake_autogen D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/onvifprobe_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>Release\onvifdevice.lib;Release\onvifcommon.lib;D:\QT\5.14.2\msvc2017_64\lib\Qt5Core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MyPlayer/3rdparty/libONVIF-master/src/build/Release/onvifprobe.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/MyPlayer/3rdparty/libONVIF-master/src/build/Release/onvifprobe.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_MinSizeRel;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.14.2/msvc2017_64/include" /external:I "D:/QT/5.14.2/msvc2017_64/include/QtCore" /external:I "D:/QT/5.14.2/msvc2017_64/./mkspecs/win32-msvc" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_MinSizeRel;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_MinSizeRel;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target onvifprobe</Message>
+      <Command>setlocal
+cd D:\MyPlayer\3rdparty\libONVIF-master\src\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\software\bin\cmake.exe -E cmake_autogen D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/onvifprobe_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\onvifdevice.lib;MinSizeRel\onvifcommon.lib;D:\QT\5.14.2\msvc2017_64\lib\Qt5Core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MyPlayer/3rdparty/libONVIF-master/src/build/MinSizeRel/onvifprobe.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/MyPlayer/3rdparty/libONVIF-master/src/build/MinSizeRel/onvifprobe.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_RelWithDebInfo;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.14.2/msvc2017_64/include" /external:I "D:/QT/5.14.2/msvc2017_64/include/QtCore" /external:I "D:/QT/5.14.2/msvc2017_64/./mkspecs/win32-msvc" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WIN32;NOMINMAX;SOAP_STD_EXPORTS;WITH_SELF_PIPE;WITH_DOM;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";onvifprobe_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_RelWithDebInfo;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\include_RelWithDebInfo;D:\MyPlayer\3rdparty\libONVIF-master\src\build;D:\MyPlayer\3rdparty\libONVIF-master\src;D:\MyPlayer\3rdparty\libONVIF-master\src\generated;D:\MyPlayer\3rdparty\libONVIF-master\src\gsoap;D:\QT\5.14.2\msvc2017_64\include;D:\QT\5.14.2\msvc2017_64\include\QtCore;D:\QT\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target onvifprobe</Message>
+      <Command>setlocal
+cd D:\MyPlayer\3rdparty\libONVIF-master\src\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\software\bin\cmake.exe -E cmake_autogen D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/onvifprobe_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\onvifdevice.lib;RelWithDebInfo\onvifcommon.lib;D:\QT\5.14.2\msvc2017_64\lib\Qt5Core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/MyPlayer/3rdparty/libONVIF-master/src/build/RelWithDebInfo/onvifprobe.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/MyPlayer/3rdparty/libONVIF-master/src/build/RelWithDebInfo/onvifprobe.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MyPlayer\3rdparty\libONVIF-master\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/MyPlayer/3rdparty/libONVIF-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\software\bin\cmake.exe -SD:/MyPlayer/3rdparty/libONVIF-master/src -BD:/MyPlayer/3rdparty/libONVIF-master/src/build --check-stamp-file D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeSystem.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\software\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCCompilerABI.c;D:\software\share\cmake-4.1\Modules\CMakeCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;D:\software\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\software\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;D:\software\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\software\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseArguments.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;D:\software\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystem.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;D:\software\share\cmake-4.1\Modules\GenerateExportHeader.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\software\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\software\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\software\share\cmake-4.1\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/MyPlayer/3rdparty/libONVIF-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\software\bin\cmake.exe -SD:/MyPlayer/3rdparty/libONVIF-master/src -BD:/MyPlayer/3rdparty/libONVIF-master/src/build --check-stamp-file D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeSystem.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\software\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCCompilerABI.c;D:\software\share\cmake-4.1\Modules\CMakeCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;D:\software\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\software\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;D:\software\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\software\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseArguments.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;D:\software\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystem.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;D:\software\share\cmake-4.1\Modules\GenerateExportHeader.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\software\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\software\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\software\share\cmake-4.1\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/MyPlayer/3rdparty/libONVIF-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\software\bin\cmake.exe -SD:/MyPlayer/3rdparty/libONVIF-master/src -BD:/MyPlayer/3rdparty/libONVIF-master/src/build --check-stamp-file D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeSystem.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\software\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCCompilerABI.c;D:\software\share\cmake-4.1\Modules\CMakeCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;D:\software\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\software\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;D:\software\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\software\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseArguments.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;D:\software\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystem.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;D:\software\share\cmake-4.1\Modules\GenerateExportHeader.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\software\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\software\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\software\share\cmake-4.1\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/MyPlayer/3rdparty/libONVIF-master/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\software\bin\cmake.exe -SD:/MyPlayer/3rdparty/libONVIF-master/src -BD:/MyPlayer/3rdparty/libONVIF-master/src/build --check-stamp-file D:/MyPlayer/3rdparty/libONVIF-master/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\4.1.0\CMakeSystem.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\Qt\5.14.2\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\software\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCCompilerABI.c;D:\software\share\cmake-4.1\Modules\CMakeCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;D:\software\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;D:\software\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;D:\software\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;D:\software\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;D:\software\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseArguments.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;D:\software\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;D:\software\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeRCInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystem.cmake.in;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;D:\software\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;D:\software\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;D:\software\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\software\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;D:\software\share\cmake-4.1\Modules\GenerateExportHeader.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;D:\software\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;D:\software\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Linker\MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;D:\software\share\cmake-4.1\Modules\Platform\Windows.cmake;D:\software\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\software\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;D:\software\share\cmake-4.1\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\MyPlayer\3rdparty\libONVIF-master\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\DeviceProbe.cpp" />
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\DeviceProbe.h" />
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifprobe_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\ZERO_CHECK.vcxproj">
+      <Project>{77EA366A-64C3-3DAA-A41B-D4C1DBCDDE4F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifcommon.vcxproj">
+      <Project>{A1A9B355-9598-3149-8BCD-19C7110E1D60}</Project>
+      <Name>onvifcommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifdevice.vcxproj">
+      <Project>{EC1EF5A5-A9DE-3EFC-A51B-4706F29508AB}</Project>
+      <Name>onvifdevice</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

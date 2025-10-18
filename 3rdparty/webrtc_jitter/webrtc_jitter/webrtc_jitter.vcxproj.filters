@@ -1,0 +1,3360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\array_view.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\audio_codecs\audio_codec_pair_id.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\audio_codecs\audio_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\audio_codecs\audio_decoder_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\audio_codecs\audio_format.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\audio_options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\bitrate_constraints.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\fec_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\fec_controller_override.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\media_stream_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\media_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\neteq\tick_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\network_state_predictor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\ref_counted_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\rtp_headers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\rtp_packet_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\rtp_packet_infos.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\rtp_parameters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\scoped_refptr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\task_queue\default_task_queue_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\task_queue\queued_task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\task_queue\task_queue_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\task_queue\task_queue_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\task_queue\task_queue_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\transport\bitrate_settings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\transport\field_trial_based_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\transport\goog_cc_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\transport\network_control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\transport\network_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\transport\webrtc_key_value_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\units\data_rate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\units\data_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\units\frequency.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\units\timestamp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\units\time_delta.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\builtin_video_bitrate_allocator_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\color_space.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\encoded_frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\encoded_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\hdr_metadata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\i010_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\i420_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_bitrate_allocation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_bitrate_allocator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_bitrate_allocator_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_codec_constants.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_codec_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_content_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_frame_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_frame_marking.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_frame_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_rotation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_sink_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_source_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_stream_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_stream_decoder_create.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_stream_encoder_create.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_stream_encoder_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_stream_encoder_observer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_stream_encoder_settings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video\video_timing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video_codecs\video_codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video_codecs\video_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\api\video_codecs\video_encoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\signal_processing\dot_product_with_scale.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\signal_processing\include\signal_processing_library.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\signal_processing\include\spl_inl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_tables_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_tables_neon_sse2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_256\fft4g.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_audio\third_party\spl_sqrt_floor\spl_sqrt_floor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\generic_frame_descriptor\generic_frame_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\h264\h264_bitstream_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\h264\h264_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\h264\pps_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\h264\profile_level_id.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\h264\sps_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\h264\sps_vui_rewriter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\include\bitrate_adjuster.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\include\i420_buffer_pool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\include\incoming_video_stream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\include\quality_limitation_reason.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\include\video_frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\include\video_frame_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\libyuv\include\webrtc_libyuv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\test\utilities.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common_video\video_render_frames.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_coding\codecs\cng\webrtc_cng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_coding\neteq\decoder_database.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_coding\neteq\packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_coding\neteq\red_payload_splitter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec\aec_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec\aec_core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec\aec_core_optimized_methods.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec\aec_resampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec\echo_cancellation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\adaptive_fir_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\aec3_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\aec3_fft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\aec_state.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\api_call_jitter_metrics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\block_delay_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\block_framer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\block_processor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\block_processor_metrics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\cascaded_biquad_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\clockdrift_detector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\comfort_noise_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\decimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\delay_estimate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\downsampled_render_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_audibility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_canceller3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_path_delay_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_path_variability.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_remover.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_remover_metrics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\erle_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\erl_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\fft_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\fft_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\filter_analyzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\frame_blocker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\fullband_erle_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\main_filter_update_gain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\matched_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\matched_filter_lag_aggregator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\matrix_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_block_processor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_echo_remover.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_render_delay_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_render_delay_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\moving_average.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\render_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\render_delay_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\render_delay_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\render_delay_controller_metrics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\render_reverb_model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\render_signal_analyzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\residual_echo_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_decay_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_frequency_response.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_model_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_model_fallback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\shadow_filter_update_gain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\signal_dependent_erle_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\stationarity_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\subband_erle_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\subtractor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\subtractor_output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\subtractor_output_analyzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\suppression_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\suppression_gain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\vector_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec3\vector_math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aecm\aecm_core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aecm\aecm_defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aecm\echo_control_mobile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec_dump\aec_dump_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec_dump\aec_dump_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec_dump\capture_stream_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec_dump\mock_aec_dump.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\aec_dump\write_to_file_task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\agc_manager_direct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\gain_map_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\legacy\analog_agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\legacy\digital_agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\legacy\gain_control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\loudness_histogram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\mock_agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc\utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_digital_gain_applier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator_agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\agc2_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\agc2_testing_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\biquad_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\compute_interpolated_gain_curve.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\down_sampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\fixed_digital_level_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\gain_applier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\interpolated_gain_curve.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\limiter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\limiter_db_gain_curve.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\noise_level_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\noise_spectrum_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\auto_correlation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\features_extraction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\lp_residual.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\pitch_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\ring_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\rnn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\sequence_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\symmetric_matrix_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\test_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\saturation_protector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\signal_classifier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\vad_with_level.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\agc2\vector_float_frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\audio_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\audio_generator\file_audio_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\audio_processing_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\echo_cancellation_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\echo_control_mobile_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\echo_detector\circular_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\echo_detector\mean_variance_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\echo_detector\moving_max.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\echo_detector\normalized_covariance_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\gain_controller2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\gain_control_config_proxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\gain_control_for_experimental_agc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\gain_control_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\aec_dump.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\audio_frame_view.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\audio_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\audio_generator_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\audio_processing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\audio_processing_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\gain_control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\include\mock_audio_processing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\level_estimator_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\logging\apm_data_dumper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\low_cut_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\noise_suppression_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\noise_suppression_proxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\noise_suppression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\noise_suppression_x.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\nsx_core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\nsx_defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\ns_core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\ns\windows_private.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\render_queue_item_verifier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\residual_echo_detector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\rms_level.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\splitting_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\aec_dump_based_simulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\api_call_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\audioproc_float_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\audio_buffer_tools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\audio_processing_simulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\bitexactness_tools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\multiend_call.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\simulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\timing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\wavreader_abstract_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\wavreader_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\wavreader_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\debug_dump_replayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\echo_canceller_test_tools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\echo_control_mock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\fake_recording_device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\performance_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\protobuf_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\runtime_setting_util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\simulator_buffers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\test_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\test\wav_based_simulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\three_band_filter_bank.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\daubechies_8_wavelet_coeffs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\dyadic_decimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\file_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\moving_moments.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\transient_detector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\transient_suppressor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\wpd_node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\transient\wpd_tree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\typing_detection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\block_mean_calculator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\delay_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\delay_estimator_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\delay_estimator_wrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\ooura_fft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\ooura_fft_tables_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\ooura_fft_tables_neon_sse2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\utility\pffft_wrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\gmm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\noise_gmm_tables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\pitch_based_vad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\pitch_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\pole_zero_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\standalone_vad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\vad_audio_proc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\vad_audio_proc_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\vad_circular_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\voice_activity_detector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\vad\voice_gmm_tables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\audio_processing\voice_detection_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\bitrate_controller\loss_based_bandwidth_estimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\bitrate_controller\send_side_bandwidth_estimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\acknowledged_bitrate_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\alr_detector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\bitrate_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\congestion_window_pushback_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\delay_based_bwe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\delay_increase_detector_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\goog_cc_network_control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\link_capacity_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\median_slope_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\probe_bitrate_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\probe_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\trendline_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\rtp\control_handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\rtp\send_time_history.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\congestion_controller\rtp\transport_feedback_adapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\include\module.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\include\module_common_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\include\module_common_types_public.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\include\module_fec_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\pacing\bitrate_prober.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\pacing\interval_budget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\pacing\paced_sender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\pacing\packet_router.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\aimd_rate_control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\include\bwe_defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\include\remote_bitrate_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\inter_arrival.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\overuse_detector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\overuse_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\remote_bitrate_estimator\remote_bitrate_estimator_abs_send_time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\flexfec_receiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\flexfec_sender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\remote_ntp_time_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\rtp_cvo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\rtp_header_extension_map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\rtp_rtcp_defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\include\ulpfec_receiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\byte_io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\fec_private_tables_bursty.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\fec_private_tables_random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\flexfec_header_reader_writer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\forward_error_correction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\forward_error_correction_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_extension.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_reader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_writer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_h264.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_video_generic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_vp8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_vp9.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor_extension.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_header_extensions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_header_extension_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet\transport_feedback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet_received.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet_to_send.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_video_header.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\ulpfec_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\ulpfec_header_reader_writer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\rtp_rtcp\source\ulpfec_receiver_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\utility\include\process_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\h264\h264_color_space.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\h264\h264_decoder_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\h264\h264_encoder_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\h264\include\h264.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\h264\include\h264_globals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\interface\common_constants.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\include\augmented_video_frame_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\include\multiplex_decoder_adapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\include\multiplex_encoder_adapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\multiplex_encoded_image_packer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\test\android_codec_factory_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\test\objc_codec_factory_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\test\videocodec_test_fixture_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\test\videocodec_test_stats_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\test\videoprocessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\test\video_codec_unittest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\default_temporal_layers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\include\temporal_layers_checker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\include\vp8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\include\vp8_globals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\libvpx_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_encoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\screenshare_layers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\temporal_layers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\test\mock_libvpx_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\include\vp9.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\include\vp9_globals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\svc_config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\svc_rate_allocator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\vp9_frame_buffer_pool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\vp9_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\codec_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\decoder_database.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\decoding_state.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\encoded_frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\fec_controller_default.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\fec_rate_table.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\frame_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\frame_buffer2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\frame_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\generic_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\h264_sprop_parameter_sets.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\h264_sps_pps_tracker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\histogram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\include\mock\mock_vcm_callbacks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\include\video_codec_initializer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\include\video_codec_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\include\video_coding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\include\video_coding_defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\include\video_error_codes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\internal_defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\inter_frame_delay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\jitter_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\jitter_buffer_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\jitter_estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\loss_notification_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\media_opt_util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\nack_module.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\packet_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\receiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\rtp_frame_reference_finder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\rtt_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\session_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\test\stream_generator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\timestamp_map.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\timing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\decoded_frames_history.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\default_video_bitrate_allocator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\framerate_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\frame_dropper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\ivf_file_writer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\quality_scaler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\simulcast_rate_allocator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\simulcast_test_fixture_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\simulcast_utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\vp8_header_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\utility\vp9_uncompressed_header_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\video_coding\video_coding_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\arraysize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\atomic_ops.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\bit_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\checks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\compile_assert_c.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\constructor_magic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\copy_on_write_buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\critical_section.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\deprecation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\event_tracer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\experiments\alr_experiment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\experiments\field_trial_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\experiments\field_trial_units.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\experiments\jitter_upper_bound_experiment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\experiments\rate_control_settings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\logging.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\network\sent_packet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\exp_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\math_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\mod_ops.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\moving_median_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\percentile_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\running_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\safe_compare.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\safe_conversions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\safe_conversions_impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\safe_minmax.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\numerics\sequence_number_util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\platform_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\platform_thread_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\rate_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\ref_count.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\ref_counted_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\ref_counter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\rolling_accumulator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\sanitizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\strings\audio_format_to_string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\strings\json.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\strings\string_builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\string_encode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\string_to_number.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\string_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\synchronization\rw_lock_posix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\synchronization\rw_lock_win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\synchronization\rw_lock_wrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\synchronization\sequence_checker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\synchronization\yield_policy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\system\fallthrough.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\system\inline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\system\rtc_export.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\system\unused.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\system\warn_current_thread_is_deadlocked.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\thread_annotations.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\thread_checker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\time\timestamp_extrapolator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\time_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\trace_event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\type_traits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\units\unit_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\rtc_base\zero_memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\api\audio_codecs\audio_codec_pair_id.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\audio_codecs\audio_decoder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\audio_codecs\audio_format.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\audio_options.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\media_stream_interface.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\media_types.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\neteq\tick_timer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\network_state_predictor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\rtp_headers.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\rtp_packet_info.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\rtp_parameters.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_gcd.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_libevent.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_stdlib.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_win.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\task_queue_base.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\task_queue\task_queue_test.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\transport\bitrate_settings.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\transport\field_trial_based_config.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\transport\goog_cc_factory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\transport\network_types.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\units\data_rate.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\units\data_size.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\units\frequency.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\units\timestamp.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\units\time_delta.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\builtin_video_bitrate_allocator_factory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\color_space.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\encoded_frame.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\encoded_image.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\hdr_metadata.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\i010_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\i420_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\test\color_space_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\test\video_bitrate_allocation_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_bitrate_allocation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_content_type.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_frame.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_frame_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_source_interface.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_stream_decoder_create.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_stream_decoder_create_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_stream_encoder_create.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_stream_encoder_observer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video\video_timing.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video_codecs\video_codec.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video_codecs\video_decoder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\api\video_codecs\video_encoder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\auto_correlation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\copy_set_operations.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\cross_correlation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\division_operations.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\dot_product_with_scale.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\downsample_fast.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\energy.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\filter_ar.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\get_hanning_window.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\get_scaling_square.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\ilbc_specific_functions.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\levinson_durbin.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\min_max_operations.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\randomization_functions.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\spl_init.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\spl_sqrt.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\signal_processing\vector_scaling_operations.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_mips.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_neon.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_sse2.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_256\fft4g.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\spl_sqrt_floor\spl_sqrt_floor.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_audio\third_party\spl_sqrt_floor\spl_sqrt_floor_mips.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\bitrate_adjuster.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\generic_frame_descriptor\generic_frame_info.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\h264\h264_bitstream_parser.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\h264\h264_common.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\h264\pps_parser.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\h264\sps_parser.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\h264\sps_vui_rewriter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\h264\sps_vui_rewriter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\i420_buffer_pool.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\incoming_video_stream.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\libyuv\libyuv_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\libyuv\webrtc_libyuv.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\test\utilities.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\video_frame_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common_video\video_render_frames.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_coding\codecs\cng\webrtc_cng.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_coding\neteq\decoder_database.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_coding\neteq\packet.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_coding\neteq\red_payload_splitter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core_mips.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core_neon.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core_sse2.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\aec_resampler.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\echo_cancellation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\echo_cancellation_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec\system_delay_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\adaptive_fir_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\adaptive_fir_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\aec3_common.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\aec3_fft.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\aec3_fft_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\aec_state.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\aec_state_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\api_call_jitter_metrics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\api_call_jitter_metrics_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_delay_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_delay_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_framer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_framer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor_metrics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor_metrics_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\cascaded_biquad_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\cascaded_biquad_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\clockdrift_detector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\clockdrift_detector_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\comfort_noise_generator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\comfort_noise_generator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\decimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\decimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\downsampled_render_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_audibility.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_canceller3.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_canceller3_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_delay_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_delay_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_variability.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_variability_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover_metrics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover_metrics_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\erle_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\erle_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\erl_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\erl_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\fft_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\fft_data_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\filter_analyzer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\filter_analyzer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\frame_blocker.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\frame_blocker_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\fullband_erle_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\main_filter_update_gain.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\main_filter_update_gain_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter_lag_aggregator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter_lag_aggregator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\matrix_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_block_processor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_echo_remover.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_render_delay_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_render_delay_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\moving_average.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\moving_average_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller_metrics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller_metrics_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_reverb_model.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_signal_analyzer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\render_signal_analyzer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\residual_echo_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\residual_echo_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_decay_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_frequency_response.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model_fallback.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\shadow_filter_update_gain.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\shadow_filter_update_gain_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\signal_dependent_erle_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\signal_dependent_erle_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\stationarity_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\subband_erle_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor_output.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor_output_analyzer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_gain.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_gain_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\vector_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec3\vector_math_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core_c.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core_mips.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core_neon.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aecm\echo_control_mobile.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\aec_dump_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\aec_dump_integration_test.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\aec_dump_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\capture_stream_info.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\mock_aec_dump.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\null_aec_dump_factory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\aec_dump\write_to_file_task.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\agc.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\agc_manager_direct.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\agc_manager_direct_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\legacy\analog_agc.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\legacy\digital_agc.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\loudness_histogram.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\loudness_histogram_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc\utility.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_agc.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_digital_gain_applier.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_digital_gain_applier_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator_agc.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\agc2_common.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\agc2_testing_common.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\agc2_testing_common_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\biquad_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\biquad_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\compute_interpolated_gain_curve.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\down_sampler.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\fixed_digital_level_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\fixed_digital_level_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\fixed_gain_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\gain_applier.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\gain_applier_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\interpolated_gain_curve.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\interpolated_gain_curve_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter_db_gain_curve.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter_db_gain_curve_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\noise_level_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\noise_level_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\noise_spectrum_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\auto_correlation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\auto_correlation_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\features_extraction.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\features_extraction_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\lp_residual.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\lp_residual_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_internal.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_internal_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\ring_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn_vad_tool.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn_vad_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\sequence_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_internal.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_internal_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\symmetric_matrix_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\test_utils.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\saturation_protector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\saturation_protector_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\signal_classifier.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\signal_classifier_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\vad_with_level.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\vad_with_level_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\agc2\vector_float_frame.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_frame_view_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_generator\file_audio_generator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_generator\file_audio_generator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_processing_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_processing_impl_locking_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_processing_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_processing_performance_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\audio_processing_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\config_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_cancellation_bit_exact_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_cancellation_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_cancellation_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_control_mobile_bit_exact_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_control_mobile_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_control_mobile_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\circular_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\circular_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\mean_variance_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\mean_variance_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\moving_max.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\moving_max_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\normalized_covariance_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\echo_detector\normalized_covariance_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_controller2.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_controller2_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_control_config_proxy.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_control_config_proxy_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_control_for_experimental_agc.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_control_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\gain_control_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\include\aec_dump.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\include\audio_generator_factory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\include\audio_processing.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\include\audio_processing_statistics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\include\config.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\level_estimator_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\level_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\logging\apm_data_dumper.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\low_cut_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\low_cut_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\noise_suppression_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\noise_suppression_proxy.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\noise_suppression_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\noise_suppression.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\noise_suppression_x.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core_c.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core_mips.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core_neon.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\ns\ns_core.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\residual_echo_detector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\residual_echo_detector_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\rms_level.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\rms_level_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\splitting_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\splitting_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\aec_dump_based_simulator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\android\apmtest\jni\main.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\api_call_statistics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\audioproc_float_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\audioproc_float_main.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\audio_buffer_tools.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\audio_processing_simulator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\bitexactness_tools.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\config.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\generator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\generator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader_factory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\multiend_call.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\simulator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\timing.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\wavreader_factory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\debug_dump_replayer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\debug_dump_test.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\echo_canceller_test_tools.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\echo_canceller_test_tools_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\fake_recording_device.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\fake_recording_device_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\performance_timer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\protobuf_utils.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\apm_vad.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\fake_polqa.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\sound_level.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\vad.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\runtime_setting_util.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\simulator_buffers.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\test_utils.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\test\wav_based_simulator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\three_band_filter_bank.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\click_annotate.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\dyadic_decimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\file_utils.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\file_utils_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\moving_moments.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\moving_moments_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\transient_detector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\transient_detector_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\transient_suppression_test.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\transient_suppressor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\transient_suppressor_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_node.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_node_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_tree.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_tree_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\typing_detection.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\block_mean_calculator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\block_mean_calculator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\delay_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\delay_estimator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\delay_estimator_wrapper.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft_mips.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft_neon.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft_sse2.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\pffft_wrapper.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\utility\pffft_wrapper_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\gmm.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\gmm_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_based_vad.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_based_vad_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_internal.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_internal_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\pole_zero_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\pole_zero_filter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\standalone_vad.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\standalone_vad_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\vad_audio_proc.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\vad_audio_proc_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\vad_circular_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\vad_circular_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\voice_activity_detector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\vad\voice_activity_detector_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\voice_detection_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\audio_processing\voice_detection_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\bitrate_controller\loss_based_bandwidth_estimation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\bitrate_controller\send_side_bandwidth_estimation.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\acknowledged_bitrate_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\alr_detector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\bitrate_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\congestion_window_pushback_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\delay_based_bwe.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\goog_cc_network_control.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\link_capacity_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\median_slope_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\probe_bitrate_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\probe_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\trendline_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\rtp\control_handler.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\rtp\send_time_history.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\congestion_controller\rtp\transport_feedback_adapter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\include\module_common_types.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\pacing\bitrate_prober.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\pacing\interval_budget.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\pacing\paced_sender.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\remote_bitrate_estimator\aimd_rate_control.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\remote_bitrate_estimator\bwe_defines.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\remote_bitrate_estimator\inter_arrival.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\remote_bitrate_estimator\overuse_detector.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\remote_bitrate_estimator\overuse_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\remote_bitrate_estimator\remote_bitrate_estimator_abs_send_time.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\include\rtp_rtcp_defines.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\fec_private_tables_bursty.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\fec_private_tables_random.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\flexfec_header_reader_writer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\flexfec_receiver.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\flexfec_sender.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\forward_error_correction.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\forward_error_correction_internal.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\remote_ntp_time_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_extension.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_h264.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_video_generic.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_vp8.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_vp9.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor_extension.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_header_extensions.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_header_extension_map.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_header_extension_size.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_packet.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_packet_received.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_packet_to_send.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_utility.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_video_header.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\ulpfec_generator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\ulpfec_header_reader_writer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\rtp_rtcp\source\ulpfec_receiver_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_color_space.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_decoder_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_encoder_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_encoder_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_simulcast_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\h264\test\h264_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\augmented_video_frame_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\multiplex_decoder_adapter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\multiplex_encoded_image_packer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\multiplex_encoder_adapter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\test\multiplex_adapter_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\android_codec_factory_helper.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_fixture_config_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_fixture_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_libvpx.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_mediacodec.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_openh264.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_stats_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_stats_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_videotoolbox.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videoprocessor.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\videoprocessor_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\video_codec_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\test\video_encoder_decoder_instantiation_tests.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\default_temporal_layers.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\default_temporal_layers_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_interface.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_decoder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_encoder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_simulcast_test.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\screenshare_layers.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\screenshare_layers_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\temporal_layers_checker.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\test\vp8_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_config.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_config_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_rate_allocator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_rate_allocator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\test\vp9_impl_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\vp9.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\vp9_frame_buffer_pool.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\vp9_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\codec_timer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\decoder_database.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\decoding_state.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\decoding_state_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\encoded_frame.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\fec_controller_default.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\frame_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\frame_buffer2.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\frame_object.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\generic_decoder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\h264_sprop_parameter_sets.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\h264_sps_pps_tracker.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\histogram.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\histogram_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\include\video_codec_interface.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\inter_frame_delay.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\jitter_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\jitter_buffer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\jitter_estimator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\jitter_estimator_tests.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\loss_notification_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\media_opt_util.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\nack_module.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\packet.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\packet_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\receiver.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\rtp_frame_reference_finder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\rtt_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\session_info.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\session_info_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\test\stream_generator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\timestamp_map.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\timing.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\timing_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\decoded_frames_history.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\decoded_frames_history_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\default_video_bitrate_allocator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\default_video_bitrate_allocator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\framerate_controller.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\framerate_controller_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\frame_dropper.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\frame_dropper_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\ivf_file_writer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\ivf_file_writer_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\quality_scaler.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\quality_scaler_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_rate_allocator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_rate_allocator_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_test_fixture_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_utility.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\vp8_header_parser.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\utility\vp9_uncompressed_header_parser.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\video_codec_initializer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\video_coding_defines.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\video_coding_impl.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\video_coding\video_receiver.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\bit_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\checks.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\copy_on_write_buffer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\critical_section.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\event.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\event_tracer.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\experiments\alr_experiment.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\experiments\field_trial_parser.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\experiments\field_trial_units.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\experiments\jitter_upper_bound_experiment.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\experiments\rate_control_settings.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\logging.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\network\sent_packet.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\numerics\exp_filter.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\platform_thread.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\platform_thread_types.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\random.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\rate_statistics.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\strings\audio_format_to_string.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\strings\json.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\strings\json_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\strings\string_builder.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\string_encode.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\string_to_number.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\string_utils.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\synchronization\rw_lock_posix.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\synchronization\rw_lock_win.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\synchronization\rw_lock_wrapper.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\synchronization\sequence_checker.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\synchronization\yield_policy.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\synchronization\yield_policy_unittest.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\system\warn_current_thread_is_deadlocked.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\time\timestamp_extrapolator.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\time_utils.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rtc_base\zero_memory.cc">
+      <Filter>头文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

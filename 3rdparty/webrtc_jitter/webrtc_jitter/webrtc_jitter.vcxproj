@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b7f1ba11-32bb-408d-a518-d9f6e742d55d}</ProjectGuid>
+    <RootNamespace>webrtcjitter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);WEBRTC_WIN;NOMINMAX;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);WEBRTC_WIN;NOMINMAX;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions);WEBRTC_WIN;NOMINMAX;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);WEBRTC_WIN;NOMINMAX;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\api\array_view.h" />
+    <ClInclude Include="..\api\audio_codecs\audio_codec_pair_id.h" />
+    <ClInclude Include="..\api\audio_codecs\audio_decoder.h" />
+    <ClInclude Include="..\api\audio_codecs\audio_decoder_factory.h" />
+    <ClInclude Include="..\api\audio_codecs\audio_format.h" />
+    <ClInclude Include="..\api\audio_options.h" />
+    <ClInclude Include="..\api\bitrate_constraints.h" />
+    <ClInclude Include="..\api\fec_controller.h" />
+    <ClInclude Include="..\api\fec_controller_override.h" />
+    <ClInclude Include="..\api\media_stream_interface.h" />
+    <ClInclude Include="..\api\media_types.h" />
+    <ClInclude Include="..\api\neteq\tick_timer.h" />
+    <ClInclude Include="..\api\network_state_predictor.h" />
+    <ClInclude Include="..\api\ref_counted_base.h" />
+    <ClInclude Include="..\api\rtp_headers.h" />
+    <ClInclude Include="..\api\rtp_packet_info.h" />
+    <ClInclude Include="..\api\rtp_packet_infos.h" />
+    <ClInclude Include="..\api\rtp_parameters.h" />
+    <ClInclude Include="..\api\scoped_refptr.h" />
+    <ClInclude Include="..\api\task_queue\default_task_queue_factory.h" />
+    <ClInclude Include="..\api\task_queue\queued_task.h" />
+    <ClInclude Include="..\api\task_queue\task_queue_base.h" />
+    <ClInclude Include="..\api\task_queue\task_queue_factory.h" />
+    <ClInclude Include="..\api\task_queue\task_queue_test.h" />
+    <ClInclude Include="..\api\transport\bitrate_settings.h" />
+    <ClInclude Include="..\api\transport\field_trial_based_config.h" />
+    <ClInclude Include="..\api\transport\goog_cc_factory.h" />
+    <ClInclude Include="..\api\transport\network_control.h" />
+    <ClInclude Include="..\api\transport\network_types.h" />
+    <ClInclude Include="..\api\transport\webrtc_key_value_config.h" />
+    <ClInclude Include="..\api\units\data_rate.h" />
+    <ClInclude Include="..\api\units\data_size.h" />
+    <ClInclude Include="..\api\units\frequency.h" />
+    <ClInclude Include="..\api\units\timestamp.h" />
+    <ClInclude Include="..\api\units\time_delta.h" />
+    <ClInclude Include="..\api\video\builtin_video_bitrate_allocator_factory.h" />
+    <ClInclude Include="..\api\video\color_space.h" />
+    <ClInclude Include="..\api\video\encoded_frame.h" />
+    <ClInclude Include="..\api\video\encoded_image.h" />
+    <ClInclude Include="..\api\video\hdr_metadata.h" />
+    <ClInclude Include="..\api\video\i010_buffer.h" />
+    <ClInclude Include="..\api\video\i420_buffer.h" />
+    <ClInclude Include="..\api\video\video_bitrate_allocation.h" />
+    <ClInclude Include="..\api\video\video_bitrate_allocator.h" />
+    <ClInclude Include="..\api\video\video_bitrate_allocator_factory.h" />
+    <ClInclude Include="..\api\video\video_codec_constants.h" />
+    <ClInclude Include="..\api\video\video_codec_type.h" />
+    <ClInclude Include="..\api\video\video_content_type.h" />
+    <ClInclude Include="..\api\video\video_frame.h" />
+    <ClInclude Include="..\api\video\video_frame_buffer.h" />
+    <ClInclude Include="..\api\video\video_frame_marking.h" />
+    <ClInclude Include="..\api\video\video_frame_type.h" />
+    <ClInclude Include="..\api\video\video_rotation.h" />
+    <ClInclude Include="..\api\video\video_sink_interface.h" />
+    <ClInclude Include="..\api\video\video_source_interface.h" />
+    <ClInclude Include="..\api\video\video_stream_decoder.h" />
+    <ClInclude Include="..\api\video\video_stream_decoder_create.h" />
+    <ClInclude Include="..\api\video\video_stream_encoder_create.h" />
+    <ClInclude Include="..\api\video\video_stream_encoder_interface.h" />
+    <ClInclude Include="..\api\video\video_stream_encoder_observer.h" />
+    <ClInclude Include="..\api\video\video_stream_encoder_settings.h" />
+    <ClInclude Include="..\api\video\video_timing.h" />
+    <ClInclude Include="..\api\video_codecs\video_codec.h" />
+    <ClInclude Include="..\api\video_codecs\video_decoder.h" />
+    <ClInclude Include="..\api\video_codecs\video_encoder.h" />
+    <ClInclude Include="..\common_audio\signal_processing\dot_product_with_scale.h" />
+    <ClInclude Include="..\common_audio\signal_processing\include\signal_processing_library.h" />
+    <ClInclude Include="..\common_audio\signal_processing\include\spl_inl.h" />
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft.h" />
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_tables_common.h" />
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_tables_neon_sse2.h" />
+    <ClInclude Include="..\common_audio\third_party\ooura\fft_size_256\fft4g.h" />
+    <ClInclude Include="..\common_audio\third_party\spl_sqrt_floor\spl_sqrt_floor.h" />
+    <ClInclude Include="..\common_video\generic_frame_descriptor\generic_frame_info.h" />
+    <ClInclude Include="..\common_video\h264\h264_bitstream_parser.h" />
+    <ClInclude Include="..\common_video\h264\h264_common.h" />
+    <ClInclude Include="..\common_video\h264\pps_parser.h" />
+    <ClInclude Include="..\common_video\h264\profile_level_id.h" />
+    <ClInclude Include="..\common_video\h264\sps_parser.h" />
+    <ClInclude Include="..\common_video\h264\sps_vui_rewriter.h" />
+    <ClInclude Include="..\common_video\include\bitrate_adjuster.h" />
+    <ClInclude Include="..\common_video\include\i420_buffer_pool.h" />
+    <ClInclude Include="..\common_video\include\incoming_video_stream.h" />
+    <ClInclude Include="..\common_video\include\quality_limitation_reason.h" />
+    <ClInclude Include="..\common_video\include\video_frame.h" />
+    <ClInclude Include="..\common_video\include\video_frame_buffer.h" />
+    <ClInclude Include="..\common_video\libyuv\include\webrtc_libyuv.h" />
+    <ClInclude Include="..\common_video\test\utilities.h" />
+    <ClInclude Include="..\common_video\video_render_frames.h" />
+    <ClInclude Include="..\modules\audio_coding\codecs\cng\webrtc_cng.h" />
+    <ClInclude Include="..\modules\audio_coding\neteq\decoder_database.h" />
+    <ClInclude Include="..\modules\audio_coding\neteq\packet.h" />
+    <ClInclude Include="..\modules\audio_coding\neteq\red_payload_splitter.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\adaptive_fir_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\aec3_common.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\aec3_fft.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\aec_state.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\api_call_jitter_metrics.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\block_delay_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\block_framer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\block_processor.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\block_processor_metrics.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\cascaded_biquad_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\clockdrift_detector.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\comfort_noise_generator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\decimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\delay_estimate.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\downsampled_render_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_audibility.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_canceller3.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_path_delay_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_path_variability.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_remover.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\echo_remover_metrics.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\erle_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\erl_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\fft_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\fft_data.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\filter_analyzer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\frame_blocker.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\fullband_erle_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\main_filter_update_gain.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\matched_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\matched_filter_lag_aggregator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\matrix_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_block_processor.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_echo_remover.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_render_delay_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\mock\mock_render_delay_controller.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\moving_average.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\render_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\render_delay_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\render_delay_controller.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\render_delay_controller_metrics.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\render_reverb_model.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\render_signal_analyzer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\residual_echo_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_decay_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_frequency_response.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_model.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_model_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\reverb_model_fallback.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\shadow_filter_update_gain.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\signal_dependent_erle_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\stationarity_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\subband_erle_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\subtractor.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\subtractor_output.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\subtractor_output_analyzer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\suppression_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\suppression_gain.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\vector_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\aec3\vector_math.h" />
+    <ClInclude Include="..\modules\audio_processing\aecm\aecm_core.h" />
+    <ClInclude Include="..\modules\audio_processing\aecm\aecm_defines.h" />
+    <ClInclude Include="..\modules\audio_processing\aecm\echo_control_mobile.h" />
+    <ClInclude Include="..\modules\audio_processing\aec\aec_common.h" />
+    <ClInclude Include="..\modules\audio_processing\aec\aec_core.h" />
+    <ClInclude Include="..\modules\audio_processing\aec\aec_core_optimized_methods.h" />
+    <ClInclude Include="..\modules\audio_processing\aec\aec_resampler.h" />
+    <ClInclude Include="..\modules\audio_processing\aec\echo_cancellation.h" />
+    <ClInclude Include="..\modules\audio_processing\aec_dump\aec_dump_factory.h" />
+    <ClInclude Include="..\modules\audio_processing\aec_dump\aec_dump_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\aec_dump\capture_stream_info.h" />
+    <ClInclude Include="..\modules\audio_processing\aec_dump\mock_aec_dump.h" />
+    <ClInclude Include="..\modules\audio_processing\aec_dump\write_to_file_task.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_agc.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_digital_gain_applier.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator_agc.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\agc2_common.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\agc2_testing_common.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\biquad_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\compute_interpolated_gain_curve.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\down_sampler.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\fixed_digital_level_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\gain_applier.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\interpolated_gain_curve.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\limiter.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\limiter_db_gain_curve.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\noise_level_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\noise_spectrum_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\auto_correlation.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\common.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\features_extraction.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\lp_residual.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\pitch_info.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_internal.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\ring_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\rnn.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\sequence_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_internal.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\symmetric_matrix_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\rnn_vad\test_utils.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\saturation_protector.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\signal_classifier.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\vad_with_level.h" />
+    <ClInclude Include="..\modules\audio_processing\agc2\vector_float_frame.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\agc.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\agc_manager_direct.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\gain_map_internal.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\legacy\analog_agc.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\legacy\digital_agc.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\legacy\gain_control.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\loudness_histogram.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\mock_agc.h" />
+    <ClInclude Include="..\modules\audio_processing\agc\utility.h" />
+    <ClInclude Include="..\modules\audio_processing\audio_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\audio_generator\file_audio_generator.h" />
+    <ClInclude Include="..\modules\audio_processing\audio_processing_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\common.h" />
+    <ClInclude Include="..\modules\audio_processing\echo_cancellation_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\echo_control_mobile_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\echo_detector\circular_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\echo_detector\mean_variance_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\echo_detector\moving_max.h" />
+    <ClInclude Include="..\modules\audio_processing\echo_detector\normalized_covariance_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\gain_controller2.h" />
+    <ClInclude Include="..\modules\audio_processing\gain_control_config_proxy.h" />
+    <ClInclude Include="..\modules\audio_processing\gain_control_for_experimental_agc.h" />
+    <ClInclude Include="..\modules\audio_processing\gain_control_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\include\aec_dump.h" />
+    <ClInclude Include="..\modules\audio_processing\include\audio_frame_view.h" />
+    <ClInclude Include="..\modules\audio_processing\include\audio_generator.h" />
+    <ClInclude Include="..\modules\audio_processing\include\audio_generator_factory.h" />
+    <ClInclude Include="..\modules\audio_processing\include\audio_processing.h" />
+    <ClInclude Include="..\modules\audio_processing\include\audio_processing_statistics.h" />
+    <ClInclude Include="..\modules\audio_processing\include\config.h" />
+    <ClInclude Include="..\modules\audio_processing\include\gain_control.h" />
+    <ClInclude Include="..\modules\audio_processing\include\mock_audio_processing.h" />
+    <ClInclude Include="..\modules\audio_processing\level_estimator_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\logging\apm_data_dumper.h" />
+    <ClInclude Include="..\modules\audio_processing\low_cut_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\noise_suppression_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\noise_suppression_proxy.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\defines.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\noise_suppression.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\noise_suppression_x.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\nsx_core.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\nsx_defines.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\ns_core.h" />
+    <ClInclude Include="..\modules\audio_processing\ns\windows_private.h" />
+    <ClInclude Include="..\modules\audio_processing\render_queue_item_verifier.h" />
+    <ClInclude Include="..\modules\audio_processing\residual_echo_detector.h" />
+    <ClInclude Include="..\modules\audio_processing\rms_level.h" />
+    <ClInclude Include="..\modules\audio_processing\splitting_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\test\aec_dump_based_simulator.h" />
+    <ClInclude Include="..\modules\audio_processing\test\api_call_statistics.h" />
+    <ClInclude Include="..\modules\audio_processing\test\audioproc_float_impl.h" />
+    <ClInclude Include="..\modules\audio_processing\test\audio_buffer_tools.h" />
+    <ClInclude Include="..\modules\audio_processing\test\audio_processing_simulator.h" />
+    <ClInclude Include="..\modules\audio_processing\test\bitexactness_tools.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\config.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader_factory.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\multiend_call.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\simulator.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\timing.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\wavreader_abstract_factory.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\wavreader_factory.h" />
+    <ClInclude Include="..\modules\audio_processing\test\conversational_speech\wavreader_interface.h" />
+    <ClInclude Include="..\modules\audio_processing\test\debug_dump_replayer.h" />
+    <ClInclude Include="..\modules\audio_processing\test\echo_canceller_test_tools.h" />
+    <ClInclude Include="..\modules\audio_processing\test\echo_control_mock.h" />
+    <ClInclude Include="..\modules\audio_processing\test\fake_recording_device.h" />
+    <ClInclude Include="..\modules\audio_processing\test\performance_timer.h" />
+    <ClInclude Include="..\modules\audio_processing\test\protobuf_utils.h" />
+    <ClInclude Include="..\modules\audio_processing\test\runtime_setting_util.h" />
+    <ClInclude Include="..\modules\audio_processing\test\simulator_buffers.h" />
+    <ClInclude Include="..\modules\audio_processing\test\test_utils.h" />
+    <ClInclude Include="..\modules\audio_processing\test\wav_based_simulator.h" />
+    <ClInclude Include="..\modules\audio_processing\three_band_filter_bank.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\common.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\daubechies_8_wavelet_coeffs.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\dyadic_decimator.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\file_utils.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\moving_moments.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\transient_detector.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\transient_suppressor.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\wpd_node.h" />
+    <ClInclude Include="..\modules\audio_processing\transient\wpd_tree.h" />
+    <ClInclude Include="..\modules\audio_processing\typing_detection.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\block_mean_calculator.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\delay_estimator.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\delay_estimator_internal.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\delay_estimator_wrapper.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\ooura_fft.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\ooura_fft_tables_common.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\ooura_fft_tables_neon_sse2.h" />
+    <ClInclude Include="..\modules\audio_processing\utility\pffft_wrapper.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\common.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\gmm.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\noise_gmm_tables.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\pitch_based_vad.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\pitch_internal.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\pole_zero_filter.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\standalone_vad.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\vad_audio_proc.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\vad_audio_proc_internal.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\vad_circular_buffer.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\voice_activity_detector.h" />
+    <ClInclude Include="..\modules\audio_processing\vad\voice_gmm_tables.h" />
+    <ClInclude Include="..\modules\audio_processing\voice_detection_impl.h" />
+    <ClInclude Include="..\modules\bitrate_controller\loss_based_bandwidth_estimation.h" />
+    <ClInclude Include="..\modules\bitrate_controller\send_side_bandwidth_estimation.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\acknowledged_bitrate_estimator.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\alr_detector.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\bitrate_estimator.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\congestion_window_pushback_controller.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\delay_based_bwe.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\delay_increase_detector_interface.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\goog_cc_network_control.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\link_capacity_estimator.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\median_slope_estimator.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\probe_bitrate_estimator.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\probe_controller.h" />
+    <ClInclude Include="..\modules\congestion_controller\goog_cc\trendline_estimator.h" />
+    <ClInclude Include="..\modules\congestion_controller\rtp\control_handler.h" />
+    <ClInclude Include="..\modules\congestion_controller\rtp\send_time_history.h" />
+    <ClInclude Include="..\modules\congestion_controller\rtp\transport_feedback_adapter.h" />
+    <ClInclude Include="..\modules\include\module.h" />
+    <ClInclude Include="..\modules\include\module_common_types.h" />
+    <ClInclude Include="..\modules\include\module_common_types_public.h" />
+    <ClInclude Include="..\modules\include\module_fec_types.h" />
+    <ClInclude Include="..\modules\pacing\bitrate_prober.h" />
+    <ClInclude Include="..\modules\pacing\interval_budget.h" />
+    <ClInclude Include="..\modules\pacing\paced_sender.h" />
+    <ClInclude Include="..\modules\pacing\packet_router.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\aimd_rate_control.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\include\bwe_defines.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\include\remote_bitrate_estimator.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\inter_arrival.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\overuse_detector.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\overuse_estimator.h" />
+    <ClInclude Include="..\modules\remote_bitrate_estimator\remote_bitrate_estimator_abs_send_time.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\flexfec_receiver.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\flexfec_sender.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\remote_ntp_time_estimator.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\rtp_cvo.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\rtp_header_extension_map.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\rtp_rtcp_defines.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\include\ulpfec_receiver.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\byte_io.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\fec_private_tables_bursty.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\fec_private_tables_random.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\flexfec_header_reader_writer.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\forward_error_correction.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\forward_error_correction_internal.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_extension.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_reader.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_writer.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_h264.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_video_generic.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_vp8.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_format_vp9.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor_extension.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_header_extensions.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_header_extension_size.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet\transport_feedback.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet_received.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_packet_to_send.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_utility.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\rtp_video_header.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\ulpfec_generator.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\ulpfec_header_reader_writer.h" />
+    <ClInclude Include="..\modules\rtp_rtcp\source\ulpfec_receiver_impl.h" />
+    <ClInclude Include="..\modules\utility\include\process_thread.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\h264\h264_color_space.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\h264\h264_decoder_impl.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\h264\h264_encoder_impl.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\h264\include\h264.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\h264\include\h264_globals.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\interface\common_constants.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\include\augmented_video_frame_buffer.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\include\multiplex_decoder_adapter.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\include\multiplex_encoder_adapter.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\multiplex\multiplex_encoded_image_packer.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\test\android_codec_factory_helper.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\test\objc_codec_factory_helper.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\test\videocodec_test_fixture_impl.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\test\videocodec_test_stats_impl.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\test\videoprocessor.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\test\video_codec_unittest.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\default_temporal_layers.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\include\temporal_layers_checker.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\include\vp8.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\include\vp8_globals.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\libvpx_interface.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_decoder.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_encoder.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\screenshare_layers.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\temporal_layers.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp8\test\mock_libvpx_interface.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\include\vp9.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\include\vp9_globals.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\svc_config.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\svc_rate_allocator.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\vp9_frame_buffer_pool.h" />
+    <ClInclude Include="..\modules\video_coding\codecs\vp9\vp9_impl.h" />
+    <ClInclude Include="..\modules\video_coding\codec_timer.h" />
+    <ClInclude Include="..\modules\video_coding\decoder_database.h" />
+    <ClInclude Include="..\modules\video_coding\decoding_state.h" />
+    <ClInclude Include="..\modules\video_coding\encoded_frame.h" />
+    <ClInclude Include="..\modules\video_coding\fec_controller_default.h" />
+    <ClInclude Include="..\modules\video_coding\fec_rate_table.h" />
+    <ClInclude Include="..\modules\video_coding\frame_buffer.h" />
+    <ClInclude Include="..\modules\video_coding\frame_buffer2.h" />
+    <ClInclude Include="..\modules\video_coding\frame_object.h" />
+    <ClInclude Include="..\modules\video_coding\generic_decoder.h" />
+    <ClInclude Include="..\modules\video_coding\h264_sprop_parameter_sets.h" />
+    <ClInclude Include="..\modules\video_coding\h264_sps_pps_tracker.h" />
+    <ClInclude Include="..\modules\video_coding\histogram.h" />
+    <ClInclude Include="..\modules\video_coding\include\mock\mock_vcm_callbacks.h" />
+    <ClInclude Include="..\modules\video_coding\include\video_codec_initializer.h" />
+    <ClInclude Include="..\modules\video_coding\include\video_codec_interface.h" />
+    <ClInclude Include="..\modules\video_coding\include\video_coding.h" />
+    <ClInclude Include="..\modules\video_coding\include\video_coding_defines.h" />
+    <ClInclude Include="..\modules\video_coding\include\video_error_codes.h" />
+    <ClInclude Include="..\modules\video_coding\internal_defines.h" />
+    <ClInclude Include="..\modules\video_coding\inter_frame_delay.h" />
+    <ClInclude Include="..\modules\video_coding\jitter_buffer.h" />
+    <ClInclude Include="..\modules\video_coding\jitter_buffer_common.h" />
+    <ClInclude Include="..\modules\video_coding\jitter_estimator.h" />
+    <ClInclude Include="..\modules\video_coding\loss_notification_controller.h" />
+    <ClInclude Include="..\modules\video_coding\media_opt_util.h" />
+    <ClInclude Include="..\modules\video_coding\nack_module.h" />
+    <ClInclude Include="..\modules\video_coding\packet.h" />
+    <ClInclude Include="..\modules\video_coding\packet_buffer.h" />
+    <ClInclude Include="..\modules\video_coding\receiver.h" />
+    <ClInclude Include="..\modules\video_coding\rtp_frame_reference_finder.h" />
+    <ClInclude Include="..\modules\video_coding\rtt_filter.h" />
+    <ClInclude Include="..\modules\video_coding\session_info.h" />
+    <ClInclude Include="..\modules\video_coding\test\stream_generator.h" />
+    <ClInclude Include="..\modules\video_coding\timestamp_map.h" />
+    <ClInclude Include="..\modules\video_coding\timing.h" />
+    <ClInclude Include="..\modules\video_coding\utility\decoded_frames_history.h" />
+    <ClInclude Include="..\modules\video_coding\utility\default_video_bitrate_allocator.h" />
+    <ClInclude Include="..\modules\video_coding\utility\framerate_controller.h" />
+    <ClInclude Include="..\modules\video_coding\utility\frame_dropper.h" />
+    <ClInclude Include="..\modules\video_coding\utility\ivf_file_writer.h" />
+    <ClInclude Include="..\modules\video_coding\utility\quality_scaler.h" />
+    <ClInclude Include="..\modules\video_coding\utility\simulcast_rate_allocator.h" />
+    <ClInclude Include="..\modules\video_coding\utility\simulcast_test_fixture_impl.h" />
+    <ClInclude Include="..\modules\video_coding\utility\simulcast_utility.h" />
+    <ClInclude Include="..\modules\video_coding\utility\vp8_header_parser.h" />
+    <ClInclude Include="..\modules\video_coding\utility\vp9_uncompressed_header_parser.h" />
+    <ClInclude Include="..\modules\video_coding\video_coding_impl.h" />
+    <ClInclude Include="..\rtc_base\arraysize.h" />
+    <ClInclude Include="..\rtc_base\atomic_ops.h" />
+    <ClInclude Include="..\rtc_base\bit_buffer.h" />
+    <ClInclude Include="..\rtc_base\buffer.h" />
+    <ClInclude Include="..\rtc_base\checks.h" />
+    <ClInclude Include="..\rtc_base\compile_assert_c.h" />
+    <ClInclude Include="..\rtc_base\constructor_magic.h" />
+    <ClInclude Include="..\rtc_base\copy_on_write_buffer.h" />
+    <ClInclude Include="..\rtc_base\critical_section.h" />
+    <ClInclude Include="..\rtc_base\deprecation.h" />
+    <ClInclude Include="..\rtc_base\event.h" />
+    <ClInclude Include="..\rtc_base\event_tracer.h" />
+    <ClInclude Include="..\rtc_base\experiments\alr_experiment.h" />
+    <ClInclude Include="..\rtc_base\experiments\field_trial_parser.h" />
+    <ClInclude Include="..\rtc_base\experiments\field_trial_units.h" />
+    <ClInclude Include="..\rtc_base\experiments\jitter_upper_bound_experiment.h" />
+    <ClInclude Include="..\rtc_base\experiments\rate_control_settings.h" />
+    <ClInclude Include="..\rtc_base\logging.h" />
+    <ClInclude Include="..\rtc_base\network\sent_packet.h" />
+    <ClInclude Include="..\rtc_base\numerics\exp_filter.h" />
+    <ClInclude Include="..\rtc_base\numerics\math_utils.h" />
+    <ClInclude Include="..\rtc_base\numerics\mod_ops.h" />
+    <ClInclude Include="..\rtc_base\numerics\moving_median_filter.h" />
+    <ClInclude Include="..\rtc_base\numerics\percentile_filter.h" />
+    <ClInclude Include="..\rtc_base\numerics\running_statistics.h" />
+    <ClInclude Include="..\rtc_base\numerics\safe_compare.h" />
+    <ClInclude Include="..\rtc_base\numerics\safe_conversions.h" />
+    <ClInclude Include="..\rtc_base\numerics\safe_conversions_impl.h" />
+    <ClInclude Include="..\rtc_base\numerics\safe_minmax.h" />
+    <ClInclude Include="..\rtc_base\numerics\sequence_number_util.h" />
+    <ClInclude Include="..\rtc_base\platform_thread.h" />
+    <ClInclude Include="..\rtc_base\platform_thread_types.h" />
+    <ClInclude Include="..\rtc_base\random.h" />
+    <ClInclude Include="..\rtc_base\rate_statistics.h" />
+    <ClInclude Include="..\rtc_base\ref_count.h" />
+    <ClInclude Include="..\rtc_base\ref_counted_object.h" />
+    <ClInclude Include="..\rtc_base\ref_counter.h" />
+    <ClInclude Include="..\rtc_base\rolling_accumulator.h" />
+    <ClInclude Include="..\rtc_base\sanitizer.h" />
+    <ClInclude Include="..\rtc_base\strings\audio_format_to_string.h" />
+    <ClInclude Include="..\rtc_base\strings\json.h" />
+    <ClInclude Include="..\rtc_base\strings\string_builder.h" />
+    <ClInclude Include="..\rtc_base\string_encode.h" />
+    <ClInclude Include="..\rtc_base\string_to_number.h" />
+    <ClInclude Include="..\rtc_base\string_utils.h" />
+    <ClInclude Include="..\rtc_base\synchronization\rw_lock_posix.h" />
+    <ClInclude Include="..\rtc_base\synchronization\rw_lock_win.h" />
+    <ClInclude Include="..\rtc_base\synchronization\rw_lock_wrapper.h" />
+    <ClInclude Include="..\rtc_base\synchronization\sequence_checker.h" />
+    <ClInclude Include="..\rtc_base\synchronization\yield_policy.h" />
+    <ClInclude Include="..\rtc_base\system\fallthrough.h" />
+    <ClInclude Include="..\rtc_base\system\inline.h" />
+    <ClInclude Include="..\rtc_base\system\rtc_export.h" />
+    <ClInclude Include="..\rtc_base\system\unused.h" />
+    <ClInclude Include="..\rtc_base\system\warn_current_thread_is_deadlocked.h" />
+    <ClInclude Include="..\rtc_base\thread_annotations.h" />
+    <ClInclude Include="..\rtc_base\thread_checker.h" />
+    <ClInclude Include="..\rtc_base\time\timestamp_extrapolator.h" />
+    <ClInclude Include="..\rtc_base\time_utils.h" />
+    <ClInclude Include="..\rtc_base\trace_event.h" />
+    <ClInclude Include="..\rtc_base\type_traits.h" />
+    <ClInclude Include="..\rtc_base\units\unit_base.h" />
+    <ClInclude Include="..\rtc_base\zero_memory.h" />
+    <ClInclude Include="framework.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\api\audio_codecs\audio_codec_pair_id.cc" />
+    <ClCompile Include="..\api\audio_codecs\audio_decoder.cc" />
+    <ClCompile Include="..\api\audio_codecs\audio_format.cc" />
+    <ClCompile Include="..\api\audio_options.cc" />
+    <ClCompile Include="..\api\media_stream_interface.cc" />
+    <ClCompile Include="..\api\media_types.cc" />
+    <ClCompile Include="..\api\neteq\tick_timer.cc" />
+    <ClCompile Include="..\api\network_state_predictor.cc" />
+    <ClCompile Include="..\api\rtp_headers.cc" />
+    <ClCompile Include="..\api\rtp_packet_info.cc" />
+    <ClCompile Include="..\api\rtp_parameters.cc" />
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_gcd.cc" />
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_libevent.cc" />
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_stdlib.cc" />
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_unittest.cc" />
+    <ClCompile Include="..\api\task_queue\default_task_queue_factory_win.cc" />
+    <ClCompile Include="..\api\task_queue\task_queue_base.cc" />
+    <ClCompile Include="..\api\task_queue\task_queue_test.cc" />
+    <ClCompile Include="..\api\transport\bitrate_settings.cc" />
+    <ClCompile Include="..\api\transport\field_trial_based_config.cc" />
+    <ClCompile Include="..\api\transport\goog_cc_factory.cc" />
+    <ClCompile Include="..\api\transport\network_types.cc" />
+    <ClCompile Include="..\api\units\data_rate.cc" />
+    <ClCompile Include="..\api\units\data_size.cc" />
+    <ClCompile Include="..\api\units\frequency.cc" />
+    <ClCompile Include="..\api\units\timestamp.cc" />
+    <ClCompile Include="..\api\units\time_delta.cc" />
+    <ClCompile Include="..\api\video\builtin_video_bitrate_allocator_factory.cc" />
+    <ClCompile Include="..\api\video\color_space.cc" />
+    <ClCompile Include="..\api\video\encoded_frame.cc" />
+    <ClCompile Include="..\api\video\encoded_image.cc" />
+    <ClCompile Include="..\api\video\hdr_metadata.cc" />
+    <ClCompile Include="..\api\video\i010_buffer.cc" />
+    <ClCompile Include="..\api\video\i420_buffer.cc" />
+    <ClCompile Include="..\api\video\test\color_space_unittest.cc" />
+    <ClCompile Include="..\api\video\test\video_bitrate_allocation_unittest.cc" />
+    <ClCompile Include="..\api\video\video_bitrate_allocation.cc" />
+    <ClCompile Include="..\api\video\video_content_type.cc" />
+    <ClCompile Include="..\api\video\video_frame.cc" />
+    <ClCompile Include="..\api\video\video_frame_buffer.cc" />
+    <ClCompile Include="..\api\video\video_source_interface.cc" />
+    <ClCompile Include="..\api\video\video_stream_decoder_create.cc" />
+    <ClCompile Include="..\api\video\video_stream_decoder_create_unittest.cc" />
+    <ClCompile Include="..\api\video\video_stream_encoder_create.cc" />
+    <ClCompile Include="..\api\video\video_stream_encoder_observer.cc" />
+    <ClCompile Include="..\api\video\video_timing.cc" />
+    <ClCompile Include="..\api\video_codecs\video_codec.cc" />
+    <ClCompile Include="..\api\video_codecs\video_decoder.cc" />
+    <ClCompile Include="..\api\video_codecs\video_encoder.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\auto_correlation.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\copy_set_operations.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\cross_correlation.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\division_operations.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\dot_product_with_scale.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\downsample_fast.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\energy.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\filter_ar.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\get_hanning_window.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\get_scaling_square.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\ilbc_specific_functions.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\levinson_durbin.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\min_max_operations.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\randomization_functions.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\spl_init.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\spl_sqrt.cc" />
+    <ClCompile Include="..\common_audio\signal_processing\vector_scaling_operations.cc" />
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft.cc" />
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_mips.cc" />
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_neon.cc" />
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_128\ooura_fft_sse2.cc" />
+    <ClCompile Include="..\common_audio\third_party\ooura\fft_size_256\fft4g.cc" />
+    <ClCompile Include="..\common_audio\third_party\spl_sqrt_floor\spl_sqrt_floor.c" />
+    <ClCompile Include="..\common_audio\third_party\spl_sqrt_floor\spl_sqrt_floor_mips.c" />
+    <ClCompile Include="..\common_video\bitrate_adjuster.cc" />
+    <ClCompile Include="..\common_video\generic_frame_descriptor\generic_frame_info.cc" />
+    <ClCompile Include="..\common_video\h264\h264_bitstream_parser.cc" />
+    <ClCompile Include="..\common_video\h264\h264_common.cc" />
+    <ClCompile Include="..\common_video\h264\pps_parser.cc" />
+    <ClCompile Include="..\common_video\h264\sps_parser.cc" />
+    <ClCompile Include="..\common_video\h264\sps_vui_rewriter.cc" />
+    <ClCompile Include="..\common_video\h264\sps_vui_rewriter_unittest.cc" />
+    <ClCompile Include="..\common_video\i420_buffer_pool.cc" />
+    <ClCompile Include="..\common_video\incoming_video_stream.cc" />
+    <ClCompile Include="..\common_video\libyuv\libyuv_unittest.cc" />
+    <ClCompile Include="..\common_video\libyuv\webrtc_libyuv.cc" />
+    <ClCompile Include="..\common_video\test\utilities.cc" />
+    <ClCompile Include="..\common_video\video_frame_buffer.cc" />
+    <ClCompile Include="..\common_video\video_render_frames.cc" />
+    <ClCompile Include="..\modules\audio_coding\codecs\cng\webrtc_cng.cc" />
+    <ClCompile Include="..\modules\audio_coding\neteq\decoder_database.cc" />
+    <ClCompile Include="..\modules\audio_coding\neteq\packet.cc" />
+    <ClCompile Include="..\modules\audio_coding\neteq\red_payload_splitter.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\adaptive_fir_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\adaptive_fir_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\aec3_common.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\aec3_fft.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\aec3_fft_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\aec_state.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\aec_state_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\api_call_jitter_metrics.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\api_call_jitter_metrics_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_delay_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_delay_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_framer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_framer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor_metrics.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor_metrics_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\block_processor_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\cascaded_biquad_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\cascaded_biquad_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\clockdrift_detector.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\clockdrift_detector_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\comfort_noise_generator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\comfort_noise_generator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\decimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\decimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\downsampled_render_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_audibility.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_canceller3.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_canceller3_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_delay_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_delay_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_variability.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_path_variability_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover_metrics.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover_metrics_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\echo_remover_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\erle_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\erle_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\erl_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\erl_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\fft_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\fft_data_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\filter_analyzer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\filter_analyzer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\frame_blocker.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\frame_blocker_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\fullband_erle_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\main_filter_update_gain.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\main_filter_update_gain_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter_lag_aggregator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter_lag_aggregator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\matched_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\matrix_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_block_processor.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_echo_remover.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_render_delay_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\mock\mock_render_delay_controller.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\moving_average.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\moving_average_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller_metrics.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller_metrics_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_delay_controller_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_reverb_model.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_signal_analyzer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\render_signal_analyzer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\residual_echo_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\residual_echo_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_decay_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_frequency_response.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\reverb_model_fallback.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\shadow_filter_update_gain.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\shadow_filter_update_gain_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\signal_dependent_erle_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\signal_dependent_erle_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\stationarity_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\subband_erle_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor_output.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor_output_analyzer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\subtractor_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_gain.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\suppression_gain_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\vector_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec3\vector_math_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core.cc" />
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core_c.cc" />
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core_mips.cc" />
+    <ClCompile Include="..\modules\audio_processing\aecm\aecm_core_neon.cc" />
+    <ClCompile Include="..\modules\audio_processing\aecm\echo_control_mobile.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core_mips.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core_neon.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\aec_core_sse2.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\aec_resampler.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\echo_cancellation.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\echo_cancellation_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec\system_delay_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\aec_dump_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\aec_dump_integration_test.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\aec_dump_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\capture_stream_info.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\mock_aec_dump.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\null_aec_dump_factory.cc" />
+    <ClCompile Include="..\modules\audio_processing\aec_dump\write_to_file_task.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_agc.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_digital_gain_applier.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_digital_gain_applier_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator_agc.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\adaptive_mode_level_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\agc2_common.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\agc2_testing_common.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\agc2_testing_common_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\biquad_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\biquad_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\compute_interpolated_gain_curve.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\down_sampler.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\fixed_digital_level_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\fixed_digital_level_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\fixed_gain_controller.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\gain_applier.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\gain_applier_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\interpolated_gain_curve.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\interpolated_gain_curve_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter_db_gain_curve.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter_db_gain_curve_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\limiter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\noise_level_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\noise_level_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\noise_spectrum_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\auto_correlation.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\auto_correlation_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\features_extraction.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\features_extraction_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\lp_residual.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\lp_residual_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_internal.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_internal_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\pitch_search_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\ring_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn_vad_tool.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\rnn_vad_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\sequence_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_internal.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_internal_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\spectral_features_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\symmetric_matrix_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\rnn_vad\test_utils.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\saturation_protector.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\saturation_protector_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\signal_classifier.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\signal_classifier_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\vad_with_level.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\vad_with_level_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc2\vector_float_frame.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc\agc.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc\agc_manager_direct.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc\agc_manager_direct_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc\legacy\analog_agc.c" />
+    <ClCompile Include="..\modules\audio_processing\agc\legacy\digital_agc.c" />
+    <ClCompile Include="..\modules\audio_processing\agc\loudness_histogram.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc\loudness_histogram_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\agc\utility.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_frame_view_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_generator\file_audio_generator.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_generator\file_audio_generator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_processing_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_processing_impl_locking_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_processing_impl_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_processing_performance_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\audio_processing_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\config_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_cancellation_bit_exact_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_cancellation_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_cancellation_impl_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_control_mobile_bit_exact_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_control_mobile_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_control_mobile_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\circular_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\circular_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\mean_variance_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\mean_variance_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\moving_max.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\moving_max_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\normalized_covariance_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\echo_detector\normalized_covariance_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_controller2.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_controller2_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_control_config_proxy.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_control_config_proxy_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_control_for_experimental_agc.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_control_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\gain_control_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\include\aec_dump.cc" />
+    <ClCompile Include="..\modules\audio_processing\include\audio_generator_factory.cc" />
+    <ClCompile Include="..\modules\audio_processing\include\audio_processing.cc" />
+    <ClCompile Include="..\modules\audio_processing\include\audio_processing_statistics.cc" />
+    <ClCompile Include="..\modules\audio_processing\include\config.cc" />
+    <ClCompile Include="..\modules\audio_processing\level_estimator_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\level_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\logging\apm_data_dumper.cc" />
+    <ClCompile Include="..\modules\audio_processing\low_cut_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\low_cut_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\noise_suppression_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\noise_suppression_proxy.cc" />
+    <ClCompile Include="..\modules\audio_processing\noise_suppression_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\ns\noise_suppression.c" />
+    <ClCompile Include="..\modules\audio_processing\ns\noise_suppression_x.c" />
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core.c" />
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core_c.c" />
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core_mips.c" />
+    <ClCompile Include="..\modules\audio_processing\ns\nsx_core_neon.c" />
+    <ClCompile Include="..\modules\audio_processing\ns\ns_core.c" />
+    <ClCompile Include="..\modules\audio_processing\residual_echo_detector.cc" />
+    <ClCompile Include="..\modules\audio_processing\residual_echo_detector_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\rms_level.cc" />
+    <ClCompile Include="..\modules\audio_processing\rms_level_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\splitting_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\splitting_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\aec_dump_based_simulator.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\android\apmtest\jni\main.c" />
+    <ClCompile Include="..\modules\audio_processing\test\api_call_statistics.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\audioproc_float_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\audioproc_float_main.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\audio_buffer_tools.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\audio_processing_simulator.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\bitexactness_tools.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\config.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\generator.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\generator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\mock_wavreader_factory.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\multiend_call.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\simulator.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\timing.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\conversational_speech\wavreader_factory.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\debug_dump_replayer.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\debug_dump_test.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\echo_canceller_test_tools.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\echo_canceller_test_tools_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\fake_recording_device.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\fake_recording_device_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\performance_timer.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\protobuf_utils.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\apm_vad.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\fake_polqa.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\sound_level.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\py_quality_assessment\quality_assessment\vad.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\runtime_setting_util.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\simulator_buffers.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\test_utils.cc" />
+    <ClCompile Include="..\modules\audio_processing\test\wav_based_simulator.cc" />
+    <ClCompile Include="..\modules\audio_processing\three_band_filter_bank.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\click_annotate.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\dyadic_decimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\file_utils.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\file_utils_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\moving_moments.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\moving_moments_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\transient_detector.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\transient_detector_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\transient_suppression_test.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\transient_suppressor.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\transient_suppressor_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_node.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_node_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_tree.cc" />
+    <ClCompile Include="..\modules\audio_processing\transient\wpd_tree_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\typing_detection.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\block_mean_calculator.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\block_mean_calculator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\delay_estimator.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\delay_estimator_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\delay_estimator_wrapper.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft_mips.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft_neon.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\ooura_fft_sse2.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\pffft_wrapper.cc" />
+    <ClCompile Include="..\modules\audio_processing\utility\pffft_wrapper_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\gmm.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\gmm_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_based_vad.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_based_vad_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_internal.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\pitch_internal_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\pole_zero_filter.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\pole_zero_filter_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\standalone_vad.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\standalone_vad_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\vad_audio_proc.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\vad_audio_proc_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\vad_circular_buffer.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\vad_circular_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\voice_activity_detector.cc" />
+    <ClCompile Include="..\modules\audio_processing\vad\voice_activity_detector_unittest.cc" />
+    <ClCompile Include="..\modules\audio_processing\voice_detection_impl.cc" />
+    <ClCompile Include="..\modules\audio_processing\voice_detection_unittest.cc" />
+    <ClCompile Include="..\modules\bitrate_controller\loss_based_bandwidth_estimation.cc" />
+    <ClCompile Include="..\modules\bitrate_controller\send_side_bandwidth_estimation.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\acknowledged_bitrate_estimator.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\alr_detector.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\bitrate_estimator.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\congestion_window_pushback_controller.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\delay_based_bwe.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\goog_cc_network_control.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\link_capacity_estimator.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\median_slope_estimator.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\probe_bitrate_estimator.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\probe_controller.cc" />
+    <ClCompile Include="..\modules\congestion_controller\goog_cc\trendline_estimator.cc" />
+    <ClCompile Include="..\modules\congestion_controller\rtp\control_handler.cc" />
+    <ClCompile Include="..\modules\congestion_controller\rtp\send_time_history.cc" />
+    <ClCompile Include="..\modules\congestion_controller\rtp\transport_feedback_adapter.cc" />
+    <ClCompile Include="..\modules\include\module_common_types.cc" />
+    <ClCompile Include="..\modules\pacing\bitrate_prober.cc" />
+    <ClCompile Include="..\modules\pacing\interval_budget.cc" />
+    <ClCompile Include="..\modules\pacing\paced_sender.cc" />
+    <ClCompile Include="..\modules\remote_bitrate_estimator\aimd_rate_control.cc" />
+    <ClCompile Include="..\modules\remote_bitrate_estimator\bwe_defines.cc" />
+    <ClCompile Include="..\modules\remote_bitrate_estimator\inter_arrival.cc" />
+    <ClCompile Include="..\modules\remote_bitrate_estimator\overuse_detector.cc" />
+    <ClCompile Include="..\modules\remote_bitrate_estimator\overuse_estimator.cc" />
+    <ClCompile Include="..\modules\remote_bitrate_estimator\remote_bitrate_estimator_abs_send_time.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\include\rtp_rtcp_defines.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\fec_private_tables_bursty.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\fec_private_tables_random.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\flexfec_header_reader_writer.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\flexfec_receiver.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\flexfec_sender.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\forward_error_correction.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\forward_error_correction_internal.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\remote_ntp_time_estimator.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_dependency_descriptor_extension.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_h264.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_video_generic.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_vp8.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_format_vp9.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_generic_frame_descriptor_extension.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_header_extensions.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_header_extension_map.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_header_extension_size.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_packet.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_packet_received.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_packet_to_send.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_utility.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\rtp_video_header.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\ulpfec_generator.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\ulpfec_header_reader_writer.cc" />
+    <ClCompile Include="..\modules\rtp_rtcp\source\ulpfec_receiver_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_color_space.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_decoder_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_encoder_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_encoder_impl_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\h264_simulcast_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\h264\test\h264_impl_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\augmented_video_frame_buffer.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\multiplex_decoder_adapter.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\multiplex_encoded_image_packer.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\multiplex_encoder_adapter.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\multiplex\test\multiplex_adapter_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\android_codec_factory_helper.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_fixture_config_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_fixture_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_libvpx.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_mediacodec.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_openh264.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_stats_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_stats_impl_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videocodec_test_videotoolbox.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videoprocessor.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\videoprocessor_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\video_codec_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\test\video_encoder_decoder_instantiation_tests.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\default_temporal_layers.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\default_temporal_layers_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_interface.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_decoder.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_encoder.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\libvpx_vp8_simulcast_test.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\screenshare_layers.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\screenshare_layers_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\temporal_layers_checker.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp8\test\vp8_impl_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_config.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_config_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_rate_allocator.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\svc_rate_allocator_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\test\vp9_impl_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\vp9.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\vp9_frame_buffer_pool.cc" />
+    <ClCompile Include="..\modules\video_coding\codecs\vp9\vp9_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\codec_timer.cc" />
+    <ClCompile Include="..\modules\video_coding\decoder_database.cc" />
+    <ClCompile Include="..\modules\video_coding\decoding_state.cc" />
+    <ClCompile Include="..\modules\video_coding\decoding_state_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\encoded_frame.cc" />
+    <ClCompile Include="..\modules\video_coding\fec_controller_default.cc" />
+    <ClCompile Include="..\modules\video_coding\frame_buffer.cc" />
+    <ClCompile Include="..\modules\video_coding\frame_buffer2.cc" />
+    <ClCompile Include="..\modules\video_coding\frame_object.cc" />
+    <ClCompile Include="..\modules\video_coding\generic_decoder.cc" />
+    <ClCompile Include="..\modules\video_coding\h264_sprop_parameter_sets.cc" />
+    <ClCompile Include="..\modules\video_coding\h264_sps_pps_tracker.cc" />
+    <ClCompile Include="..\modules\video_coding\histogram.cc" />
+    <ClCompile Include="..\modules\video_coding\histogram_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\include\video_codec_interface.cc" />
+    <ClCompile Include="..\modules\video_coding\inter_frame_delay.cc" />
+    <ClCompile Include="..\modules\video_coding\jitter_buffer.cc" />
+    <ClCompile Include="..\modules\video_coding\jitter_buffer_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\jitter_estimator.cc" />
+    <ClCompile Include="..\modules\video_coding\jitter_estimator_tests.cc" />
+    <ClCompile Include="..\modules\video_coding\loss_notification_controller.cc" />
+    <ClCompile Include="..\modules\video_coding\media_opt_util.cc" />
+    <ClCompile Include="..\modules\video_coding\nack_module.cc" />
+    <ClCompile Include="..\modules\video_coding\packet.cc" />
+    <ClCompile Include="..\modules\video_coding\packet_buffer.cc" />
+    <ClCompile Include="..\modules\video_coding\receiver.cc" />
+    <ClCompile Include="..\modules\video_coding\rtp_frame_reference_finder.cc" />
+    <ClCompile Include="..\modules\video_coding\rtt_filter.cc" />
+    <ClCompile Include="..\modules\video_coding\session_info.cc" />
+    <ClCompile Include="..\modules\video_coding\session_info_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\test\stream_generator.cc" />
+    <ClCompile Include="..\modules\video_coding\timestamp_map.cc" />
+    <ClCompile Include="..\modules\video_coding\timing.cc" />
+    <ClCompile Include="..\modules\video_coding\timing_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\decoded_frames_history.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\decoded_frames_history_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\default_video_bitrate_allocator.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\default_video_bitrate_allocator_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\framerate_controller.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\framerate_controller_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\frame_dropper.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\frame_dropper_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\ivf_file_writer.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\ivf_file_writer_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\quality_scaler.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\quality_scaler_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_rate_allocator.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_rate_allocator_unittest.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_test_fixture_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\simulcast_utility.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\vp8_header_parser.cc" />
+    <ClCompile Include="..\modules\video_coding\utility\vp9_uncompressed_header_parser.cc" />
+    <ClCompile Include="..\modules\video_coding\video_codec_initializer.cc" />
+    <ClCompile Include="..\modules\video_coding\video_coding_defines.cc" />
+    <ClCompile Include="..\modules\video_coding\video_coding_impl.cc" />
+    <ClCompile Include="..\modules\video_coding\video_receiver.cc" />
+    <ClCompile Include="..\rtc_base\bit_buffer.cc" />
+    <ClCompile Include="..\rtc_base\checks.cc" />
+    <ClCompile Include="..\rtc_base\copy_on_write_buffer.cc" />
+    <ClCompile Include="..\rtc_base\critical_section.cc" />
+    <ClCompile Include="..\rtc_base\event.cc" />
+    <ClCompile Include="..\rtc_base\event_tracer.cc" />
+    <ClCompile Include="..\rtc_base\experiments\alr_experiment.cc" />
+    <ClCompile Include="..\rtc_base\experiments\field_trial_parser.cc" />
+    <ClCompile Include="..\rtc_base\experiments\field_trial_units.cc" />
+    <ClCompile Include="..\rtc_base\experiments\jitter_upper_bound_experiment.cc" />
+    <ClCompile Include="..\rtc_base\experiments\rate_control_settings.cc" />
+    <ClCompile Include="..\rtc_base\logging.cc" />
+    <ClCompile Include="..\rtc_base\network\sent_packet.cc" />
+    <ClCompile Include="..\rtc_base\numerics\exp_filter.cc" />
+    <ClCompile Include="..\rtc_base\platform_thread.cc" />
+    <ClCompile Include="..\rtc_base\platform_thread_types.cc" />
+    <ClCompile Include="..\rtc_base\random.cc" />
+    <ClCompile Include="..\rtc_base\rate_statistics.cc" />
+    <ClCompile Include="..\rtc_base\strings\audio_format_to_string.cc" />
+    <ClCompile Include="..\rtc_base\strings\json.cc" />
+    <ClCompile Include="..\rtc_base\strings\json_unittest.cc" />
+    <ClCompile Include="..\rtc_base\strings\string_builder.cc" />
+    <ClCompile Include="..\rtc_base\string_encode.cc" />
+    <ClCompile Include="..\rtc_base\string_to_number.cc" />
+    <ClCompile Include="..\rtc_base\string_utils.cc" />
+    <ClCompile Include="..\rtc_base\synchronization\rw_lock_posix.cc" />
+    <ClCompile Include="..\rtc_base\synchronization\rw_lock_win.cc" />
+    <ClCompile Include="..\rtc_base\synchronization\rw_lock_wrapper.cc" />
+    <ClCompile Include="..\rtc_base\synchronization\sequence_checker.cc" />
+    <ClCompile Include="..\rtc_base\synchronization\yield_policy.cc" />
+    <ClCompile Include="..\rtc_base\synchronization\yield_policy_unittest.cc" />
+    <ClCompile Include="..\rtc_base\system\warn_current_thread_is_deadlocked.cc" />
+    <ClCompile Include="..\rtc_base\time\timestamp_extrapolator.cc" />
+    <ClCompile Include="..\rtc_base\time_utils.cc" />
+    <ClCompile Include="..\rtc_base\zero_memory.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,2 @@
+3.x版本
+需要 RTP_SUPPORT_THREAD

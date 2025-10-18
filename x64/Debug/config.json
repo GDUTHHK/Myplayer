@@ -1,0 +1,25 @@
+{
+    "stream_client": "rtsp_client",
+    "video_decoder": "soft_decoder",
+    "audio_decoder": "SoftAudioDecoder",
+    "data_consumers": {
+      "render": "opengl_consumer",
+      "audio": "audio_consumer"
+    },
+    "audio_config": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "bits_per_sample": 16,
+      "buffer_size": 4096
+    },
+    "playback_config": {
+      "mode": "audio_video",
+      "sync_enabled": false,
+      "frame_rate_limit": {
+        "enabled": false,
+        "fps": 25.0
+      }
+    },
+    "render_enabled": true,
+    "audio_enabled": true
+  }

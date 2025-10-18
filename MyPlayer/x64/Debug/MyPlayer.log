@@ -1,0 +1,136 @@
+﻿   Qt/MSBuild: 3.4.1.0
+  Reading Qt configuration (D:/QT/5.14.2/msvc2017_64/bin/qmake)
+   Qt: 5.14.2
+  uic MyMainWindow.ui
+  moc include\MyMainWindow.h
+  main.cpp
+  MyMainWindow.cpp
+E:\rtsp\MyPlayer\MyPlayer\include\MyMainWindow.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\rtsp\MyPlayer\MyPlayer\include\MyMainWindow.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“include/MyMainWindow.cpp”)
+  
+  JsonConfigFactory.cpp
+  Base64.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\Base64.cpp(42,33): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  DigestAuthentication.cpp
+  ourMD5.cpp
+  SpsParse.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(127,35): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(126,35): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(134,49): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(134,31): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(141,40): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\rtsp\MyPlayer\MyPlayer\src\internal\DigestAuthentication.cpp(142,9): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(34,28): warning C4018: “<”: 有符号/无符号不匹配
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(61,28): warning C4018: “<”: 有符号/无符号不匹配
+E:\rtsp\MyPlayer\MyPlayer\src\internal\SpsParse.cpp(132,31): warning C4018: “<”: 有符号/无符号不匹配
+  STRTPSession.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/internal/STRTPSession.cpp”)
+  
+  MediaPipeline.cpp
+  MediaPlayerFacade.cpp
+  OpenGLConsumer.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\products\OpenGLConsumer.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\rtsp\MyPlayer\MyPlayer\src\products\OpenGLConsumer.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/OpenGLConsumer.cpp”)
+  
+  RtspClient.cpp
+  PrivateRtsp.cpp
+  SoftDecoder.cpp
+  OnvifDeviceModel.cpp
+  OnvifDeviceSearcher.cpp
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/factories/JsonConfigFactory.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MediaPipeline.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/MediaPlayerFacade.cpp”)
+  
+E:\rtsp\MyPlayer\3rdparty\ffmpeg-4.3.1\build\windows\x64\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/SoftDecoder.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/SoftDecoder.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\products\SoftDecoder.cpp(51,67): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/PrivateRtsp.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/RtspClient.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\include\MyMainWindow.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“example/main.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp(164,53): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp(230,36): warning C4244: “参数”: 从“SOCKET”转换到“const int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\PrivateRtsp.cpp(400,32): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“example/main.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/RtspClient.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(149,58): warning C4267: “=”: 从“size_t”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(160,32): warning C4244: “=”: 从“unsigned __int64”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(168,39): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(208,30): warning C4267: “+=”: 从“size_t”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(209,16): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(221,50): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(254,51): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(275,57): warning C4267: “+=”: 从“size_t”转换到“ST_UI”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\STRTPSession.cpp(276,43): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(171,49): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(932,32): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(1034,47): warning C4244: “=”: 从“unsigned long”转换到“unsigned short”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“include/MyMainWindow.cpp”)
+  
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(1487,86): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\products\RtspClient.cpp(1501,86): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+E:\rtsp\MyPlayer\MyPlayer\src\internal\EventDispatcher.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“src/products/OpenGLConsumer.cpp”)
+  
+  moc_MyMainWindow.cpp
+E:\rtsp\MyPlayer\MyPlayer\include\MyMainWindow.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“x64/Debug/qt/moc/moc_MyMainWindow.cpp”)
+  
+jrtplib_d.lib(rtpsession.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpsession.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpsessionparams.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpsessionparams.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtptcpaddress.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtptcpaddress.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpipv4address.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpipv4address.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtprandom.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtprandom.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtppacketbuilder.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtppacketbuilder.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpsources.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpsources.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpsessionsources.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpsessionsources.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpcollisionlist.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpcollisionlist.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpscheduler.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpscheduler.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcppacketbuilder.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcppacketbuilder.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpcompoundpacketbuilder.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpcompoundpacketbuilder.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtppollthread.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtppollthread.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpudpv4transmitter.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpudpv4transmitter.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpudpv6transmitter.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpudpv6transmitter.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtptcptransmitter.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtptcptransmitter.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpexternaltransmitter.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpexternaltransmitter.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtptimeutilities.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtptimeutilities.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtprandomrands.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtprandomrands.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtprandomrand48.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtprandomrand48.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtppacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtppacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpinternalsourcedata.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpinternalsourcedata.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpcompoundpacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpcompoundpacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpsdesinfo.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpsdesinfo.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpsdespacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpsdespacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpsrpacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpsrpacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcprrpacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcprrpacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpbyepacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpbyepacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtcpapppacket.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtcpapppacket.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpabortdescriptors.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpabortdescriptors.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpipv6address.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpipv6address.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jrtplib_d.lib(rtpsourcedata.obj) : warning LNK4099: 未找到 PDB“jrtplib_d.pdb”(使用“jrtplib_d.lib(rtpsourcedata.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jrtplib_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jthread_d.lib(jmutex.obj) : warning LNK4099: 未找到 PDB“jthread_d.pdb”(使用“jthread_d.lib(jmutex.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jthread_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+jthread_d.lib(jthread.obj) : warning LNK4099: 未找到 PDB“jthread_d.pdb”(使用“jthread_d.lib(jthread.obj)”或在“E:\rtsp\MyPlayer\x64\Debug\jthread_d.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  MyPlayer.vcxproj -> E:\rtsp\MyPlayer\x64\Debug\MyPlayer.exe

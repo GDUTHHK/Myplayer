@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifimaging_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\generated\soapImagingBindingProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\OnvifImagingClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifimaging_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifimaging_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\MyPlayer\3rdparty\libONVIF-master\src\build\onvifimaging_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\generated\soapImagingBindingProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\MyPlayer\3rdparty\libONVIF-master\src\OnvifImagingClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\MyPlayer\3rdparty\libONVIF-master\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9E697FED-DF61-3726-B015-7BBEFDE96F67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7C8E9A3B-9447-3081-ABDB-3C4053D6EC91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

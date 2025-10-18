@@ -1,0 +1,1230 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "D:/software/share/cmake-4.1/Modules/"
+    found: "D:/software/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      生成启动时间为 2025/8/12 17:18:48。
+      节点 1 上的项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdC.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+      ClCompile:
+        D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdC.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:01.13
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/4.1.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+    searched_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.com"
+    found: "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+    searched_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.com"
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.exe"
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link"
+      - "D:/cursor/resources/app/bin/lld-link.com"
+      - "D:/cursor/resources/app/bin/lld-link.exe"
+      - "D:/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/lld-link"
+      - "D:/software/VMware/VMware Workstation/bin/lld-link.com"
+      - "D:/software/VMware/VMware Workstation/bin/lld-link.exe"
+      - "D:/software/VMware/VMware Workstation/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/lld-link"
+      - "D:/php/ext/lld-link.com"
+      - "D:/php/ext/lld-link.exe"
+      - "D:/php/ext/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "D:/xshell/lld-link.com"
+      - "D:/xshell/lld-link.exe"
+      - "D:/xshell/lld-link"
+      - "D:/xftp/lld-link.com"
+      - "D:/xftp/lld-link.exe"
+      - "D:/xftp/lld-link"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/lld-link.com"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/lld-link.exe"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/lld-link"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.com"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.exe"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link"
+      - "D:/software/NTP/bin/lld-link.com"
+      - "D:/software/NTP/bin/lld-link.exe"
+      - "D:/software/NTP/bin/lld-link"
+      - "D:/software/bin/lld-link.com"
+      - "D:/software/bin/lld-link.exe"
+      - "D:/software/bin/lld-link"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Users/admin/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/admin/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/lld-link"
+      - "D:/Microsoft VS Code/bin/lld-link.com"
+      - "D:/Microsoft VS Code/bin/lld-link.exe"
+      - "D:/Microsoft VS Code/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+    searched_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.com"
+    found: "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+    searched_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/mt.com"
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/mt.exe"
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/mt"
+      - "D:/cursor/resources/app/bin/mt.com"
+      - "D:/cursor/resources/app/bin/mt.exe"
+      - "D:/cursor/resources/app/bin/mt"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/mt.com"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/mt.exe"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/mt"
+      - "D:/software/VMware/VMware Workstation/bin/mt.com"
+      - "D:/software/VMware/VMware Workstation/bin/mt.exe"
+      - "D:/software/VMware/VMware Workstation/bin/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/mt"
+      - "D:/php/ext/mt.com"
+      - "D:/php/ext/mt.exe"
+      - "D:/php/ext/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/mt"
+      - "D:/xshell/mt.com"
+      - "D:/xshell/mt.exe"
+      - "D:/xshell/mt"
+      - "D:/xftp/mt.com"
+      - "D:/xftp/mt.exe"
+      - "D:/xftp/mt"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/mt.com"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/mt.exe"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/mt"
+      - "C:/Program Files/TortoiseSVN/bin/mt.com"
+      - "C:/Program Files/TortoiseSVN/bin/mt.exe"
+      - "C:/Program Files/TortoiseSVN/bin/mt"
+      - "D:/software/NTP/bin/mt.com"
+      - "D:/software/NTP/bin/mt.exe"
+      - "D:/software/NTP/bin/mt"
+      - "D:/software/bin/mt.com"
+      - "D:/software/bin/mt.exe"
+      - "D:/software/bin/mt"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/mt.com"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/mt.exe"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/mt"
+      - "C:/Users/admin/AppData/Roaming/npm/mt.com"
+      - "C:/Users/admin/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/mt"
+      - "D:/Microsoft VS Code/bin/mt.com"
+      - "D:/Microsoft VS Code/bin/mt.exe"
+      - "D:/Microsoft VS Code/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+    searched_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lib.com"
+    found: "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "D:/software/share/cmake-4.1/Modules/"
+    found: "D:/software/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      生成启动时间为 2025/8/12 17:18:49。
+      节点 1 上的项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        正在创建目录“Debug\\CompilerIdCXX.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+      ClCompile:
+        D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.98
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/4.1.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+    searched_directories:
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.com"
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.exe"
+      - "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link"
+      - "D:/cursor/resources/app/bin/lld-link.com"
+      - "D:/cursor/resources/app/bin/lld-link.exe"
+      - "D:/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/lld-link"
+      - "D:/software/VMware/VMware Workstation/bin/lld-link.com"
+      - "D:/software/VMware/VMware Workstation/bin/lld-link.exe"
+      - "D:/software/VMware/VMware Workstation/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/lld-link"
+      - "D:/php/ext/lld-link.com"
+      - "D:/php/ext/lld-link.exe"
+      - "D:/php/ext/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "D:/xshell/lld-link.com"
+      - "D:/xshell/lld-link.exe"
+      - "D:/xshell/lld-link"
+      - "D:/xftp/lld-link.com"
+      - "D:/xftp/lld-link.exe"
+      - "D:/xftp/lld-link"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/lld-link.com"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/lld-link.exe"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/lld-link"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.com"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link.exe"
+      - "C:/Program Files/TortoiseSVN/bin/lld-link"
+      - "D:/software/NTP/bin/lld-link.com"
+      - "D:/software/NTP/bin/lld-link.exe"
+      - "D:/software/NTP/bin/lld-link"
+      - "D:/software/bin/lld-link.com"
+      - "D:/software/bin/lld-link.exe"
+      - "D:/software/bin/lld-link"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Users/admin/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/admin/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/lld-link"
+      - "D:/Microsoft VS Code/bin/lld-link.com"
+      - "D:/Microsoft VS Code/bin/lld-link.exe"
+      - "D:/Microsoft VS Code/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "D:/software/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "D:/software/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "D:/software/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "D:/cursor/resources/app/bin/"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/"
+      - "D:/software/VMware/VMware Workstation/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/"
+      - "D:/php/ext/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/"
+      - "D:/xshell/"
+      - "D:/xftp/"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/nodejs/"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/"
+      - "C:/Program Files/TortoiseSVN/bin/"
+      - "D:/software/NTP/bin/"
+      - "D:/software/bin/"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/admin/AppData/Roaming/npm/"
+      - "D:/Microsoft VS Code/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "D:/software/bin/"
+      - "D:/software/sbin/"
+      - "D:/software/"
+      - "C:/Program Files (x86)/QtAppBase/bin/"
+      - "C:/Program Files (x86)/QtAppBase/sbin/"
+      - "C:/Program Files (x86)/QtAppBase/"
+    searched_directories:
+      - "D:/cursor/resources/app/bin/rc.com"
+      - "D:/cursor/resources/app/bin/rc.exe"
+      - "D:/cursor/resources/app/bin/rc"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/rc.com"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/rc.exe"
+      - "C:/Program Files (x86)/Microsoft/Edge/Application/rc"
+      - "D:/software/VMware/VMware Workstation/bin/rc.com"
+      - "D:/software/VMware/VMware Workstation/bin/rc.exe"
+      - "D:/software/VMware/VMware Workstation/bin/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/110/Tools/Binn/rc"
+      - "D:/php/ext/rc.com"
+      - "D:/php/ext/rc.exe"
+      - "D:/php/ext/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/admin/AppData/Local/Microsoft/WindowsApps/rc"
+      - "D:/xshell/rc.com"
+      - "D:/xshell/rc.exe"
+      - "D:/xshell/rc"
+      - "D:/xftp/rc.com"
+      - "D:/xftp/rc.exe"
+      - "D:/xftp/rc"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc.com"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc.exe"
+      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/rc.com"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/rc.exe"
+      - "D:/software/Qt/Qt5.14.2/Tools/mingw730_64/bin/rc"
+      - "C:/Program Files/TortoiseSVN/bin/rc.com"
+      - "C:/Program Files/TortoiseSVN/bin/rc.exe"
+      - "C:/Program Files/TortoiseSVN/bin/rc"
+      - "D:/software/NTP/bin/rc.com"
+      - "D:/software/NTP/bin/rc.exe"
+      - "D:/software/NTP/bin/rc"
+      - "D:/software/bin/rc.com"
+      - "D:/software/bin/rc.exe"
+      - "D:/software/bin/rc"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/rc.com"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/rc.exe"
+      - "C:/Users/admin/AppData/Local/Programs/cursor/resources/app/bin/rc"
+      - "C:/Users/admin/AppData/Roaming/npm/rc.com"
+      - "C:/Users/admin/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/admin/AppData/Roaming/npm/rc"
+      - "D:/Microsoft VS Code/bin/rc.com"
+      - "D:/Microsoft VS Code/bin/rc.exe"
+      - "D:/Microsoft VS Code/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "D:/software/bin/rc.com"
+      - "D:/software/bin/rc.exe"
+      - "D:/software/bin/rc"
+      - "D:/software/sbin/rc.com"
+      - "D:/software/sbin/rc.exe"
+      - "D:/software/sbin/rc"
+      - "D:/software/rc.com"
+      - "D:/software/rc.exe"
+      - "D:/software/rc"
+      - "C:/Program Files (x86)/QtAppBase/bin/rc.com"
+      - "C:/Program Files (x86)/QtAppBase/bin/rc.exe"
+      - "C:/Program Files (x86)/QtAppBase/bin/rc"
+      - "C:/Program Files (x86)/QtAppBase/sbin/rc.com"
+      - "C:/Program Files (x86)/QtAppBase/sbin/rc.exe"
+      - "C:/Program Files (x86)/QtAppBase/sbin/rc"
+      - "C:/Program Files (x86)/QtAppBase/rc.com"
+      - "C:/Program Files (x86)/QtAppBase/rc.exe"
+      - "C:/Program Files (x86)/QtAppBase/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "d:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files (x86)\\Microsoft\\Edge\\Application"
+        - "D:\\software\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\"
+        - "D:\\php\\ext"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "d:\\cursor\\resources\\app\\bin"
+        - "D:\\xshell\\"
+        - "D:\\xftp\\"
+        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "D:\\software\\Qt\\Qt5.14.2\\Tools\\mingw730_64\\bin"
+        - "C:\\Program Files\\TortoiseSVN\\bin"
+        - "D:\\software\\NTP\\bin"
+        - "D:\\software\\bin"
+        - "C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\admin\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\admin\\AppData\\Roaming\\npm"
+        - "D:\\Microsoft VS Code\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QtAppBase"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/software"
+        - "C:/Program Files (x86)/QtAppBase"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-al1gfy"
+      binary: "D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-al1gfy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-al1gfy'
+        
+        Run Build Command(s): D:/vs2019/vs/MSBuild/Current/Bin/MSBuild.exe cmTC_9e2d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2025/8/12 17:18:51。
+        节点 1 上的项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-al1gfy\\cmTC_9e2d4.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_9e2d4.dir\\Debug\\”。
+          正在创建目录“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-al1gfy\\Debug\\”。
+          正在创建目录“cmTC_9e2d4.dir\\Debug\\cmTC_9e2d4.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_9e2d4.dir\\Debug\\cmTC_9e2d4.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_9e2d4.dir\\Debug\\\\" /Fd"cmTC_9e2d4.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\software\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30159 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CMakeCCompilerABI.c
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_9e2d4.dir\\Debug\\\\" /Fd"cmTC_9e2d4.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\software\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-al1gfy\\Debug\\cmTC_9e2d4.exe" /INCREMENTAL /ILK:"cmTC_9e2d4.dir\\Debug\\cmTC_9e2d4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-al1gfy/Debug/cmTC_9e2d4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-al1gfy/Debug/cmTC_9e2d4.lib" /MACHINE:X64  /machine:x64 cmTC_9e2d4.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_9e2d4.vcxproj -> D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-al1gfy\\Debug\\cmTC_9e2d4.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_9e2d4.dir\\Debug\\cmTC_9e2d4.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_9e2d4.dir\\Debug\\cmTC_9e2d4.tlog\\cmTC_9e2d4.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-al1gfy\\cmTC_9e2d4.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.96
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30159.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-q43pnr"
+      binary: "D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-q43pnr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-q43pnr'
+        
+        Run Build Command(s): D:/vs2019/vs/MSBuild/Current/Bin/MSBuild.exe cmTC_cd7e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.2+f32259642
+        版权所有(C) Microsoft Corporation。保留所有权利。
+        
+        生成启动时间为 2025/8/12 17:18:52。
+        节点 1 上的项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q43pnr\\cmTC_cd7e0.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_cd7e0.dir\\Debug\\”。
+          正在创建目录“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q43pnr\\Debug\\”。
+          正在创建目录“cmTC_cd7e0.dir\\Debug\\cmTC_cd7e0.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_cd7e0.dir\\Debug\\cmTC_cd7e0.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        ClCompile:
+          D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Fo"cmTC_cd7e0.dir\\Debug\\\\" /Fd"cmTC_cd7e0.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\software\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30159 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          CMakeCXXCompilerABI.cpp
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Fo"cmTC_cd7e0.dir\\Debug\\\\" /Fd"cmTC_cd7e0.dir\\Debug\\vc142.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\software\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          D:\\vs2019\\vs\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q43pnr\\Debug\\cmTC_cd7e0.exe" /INCREMENTAL /ILK:"cmTC_cd7e0.dir\\Debug\\cmTC_cd7e0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-q43pnr/Debug/cmTC_cd7e0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/MyPlayer/3rdparty/libONVIF-master/build/CMakeFiles/CMakeScratch/TryCompile-q43pnr/Debug/cmTC_cd7e0.lib" /MACHINE:X64  /machine:x64 cmTC_cd7e0.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_cd7e0.vcxproj -> D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q43pnr\\Debug\\cmTC_cd7e0.exe
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_cd7e0.dir\\Debug\\cmTC_cd7e0.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_cd7e0.dir\\Debug\\cmTC_cd7e0.tlog\\cmTC_cd7e0.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“D:\\MyPlayer\\3rdparty\\libONVIF-master\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q43pnr\\cmTC_cd7e0.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:01.02
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/software/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "D:/software/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "D:/vs2019/vs/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30159.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
